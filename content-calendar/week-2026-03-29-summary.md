@@ -36,7 +36,7 @@
 
 > I spent £200 on fitness apps last year. Not one of them was built for me.
 >
-> I'm in my 40s. I've got a demanding job, inconsistent sleep, and I genuinely don't recover the way I did at 25. Every app I tried assumed I could train five days a week, bounce back overnight, and push hard regardless of how my body was actually feeling.
+> I'm in my 50s. I've got a demanding job, inconsistent sleep, and I genuinely don't recover the way I did at 25. Every app I tried assumed I could train five days a week, bounce back overnight, and push hard regardless of how my body was actually feeling.
 >
 > So I started digging into the science. And it turns out — your body after 40 responds differently to training. Recovery windows are longer. HRV matters more. And the biggest gains don't come from training harder — they come from training smarter.
 >
@@ -166,7 +166,7 @@ HeyGen avatar, direct-to-camera. Slightly more urgent energy than the founder vi
 > Save this — I'll be sharing exactly what that looks like for your 40s and 50s.
 
 **END CTA:**
-> "Save this — and comment STRONG if you want the resistance training guide and waitlist link sent to you."
+> "Save this — and comment STRONG if you want the full resistance training guide sent to you."
 
 ---
 
@@ -187,7 +187,7 @@ Falls are the leading cause of injury-related death in over-65s — and almost a
 
 The prescription? 2–3 resistance sessions a week. Progressive. Consistent.
 
-Comment STRONG below and I'll send you a full breakdown of what that looks like for your 40s and 50s. 👇
+Comment STRONG below and I'll send you a full resistance training guide. 👇
 
 #fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #sarcopenia #muscleloss #strengthafter40 #agingwell #healthspan #fallprevention #bodyweightexercises
 
@@ -209,13 +209,13 @@ HeyGen avatar, direct-to-camera. Measured, clear delivery — let the stats land
 **ManyChat trigger:** 4X4
 
 **HOOK (first 3 seconds):**
-> "What if I told you the single best predictor of how long you'll live isn't cholesterol — and you can train it in 16 minutes a week?"
+> "Norwegian researchers found the most effective cardio protocol ever studied. It takes 16 minutes."
 
 ---
 
 **SCRIPT (30–45 seconds — direct to camera):**
 
-> What if I told you the single best predictor of how long you'll live isn't cholesterol — and you can train it in 16 minutes a week?
+> Norwegian researchers found the most effective cardio protocol ever studied. It takes 16 minutes.
 >
 > The Norwegian 4x4 was developed at the Norwegian University of Science and Technology. Here's how it works.
 >
@@ -512,7 +512,7 @@ Save this — you'll want to come back to it.
 
 ## Notes for Production
 
-- **ManyChat:** Activate triggers `EARLY`, `STRONG`, and `4X4` before publishing Reels 1, 3, and 4. `EARLY` auto-DMs the waitlist link with a short warm welcome message. `4X4` auto-DMs the waitlist link **plus** the Norwegian 4x4 protocol guide (see `guides/norwegian-4x4-protocol.md`). `STRONG` auto-DMs the waitlist link **plus** the resistance training guide (see `guides/resistance-training-40-plus.md`).
+- **ManyChat:** Activate triggers `EARLY`, `STRONG`, and `4X4` before publishing Reels 1, 3, and 4. Each should auto-DM the waitlist link with a short warm welcome message.
 - **Later scheduling:** Publish Reels at 7–9am or 6–8pm local time for best reach. Carousels mid-week. Stories daily — post manually or via phone for authenticity.
 - **HeyGen:** All 5 scripts are written for direct-to-camera delivery at a natural speaking pace (~130–140 words per minute). Scripts land in the 30–45 second window.
 - **Caption formatting:** Line breaks are intentional — copy as-is into Instagram. Do not collapse into single paragraphs.
