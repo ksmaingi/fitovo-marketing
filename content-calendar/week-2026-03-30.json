@@ -1,0 +1,267 @@
+{
+  "week": "2026-03-30 to 2026-04-05",
+  "meta": {
+    "week_number": 2,
+    "phase": "Pre-launch — build momentum",
+    "focus": "Deepen the science narrative, introduce zone training, build community engagement with an interactive challenge",
+    "previous_hooks_avoided": [
+      "Personal confession / cost frustration (Week 1 Reel 1)",
+      "Stat + 'right now. Every year.' urgent present tense (Week 1 Reel 2)",
+      "'Quietly happening' hidden threat (Week 1 Reel 3)",
+      "'Researchers found X. It takes Y minutes.' discovery format (Week 1 Reel 4)",
+      "Numbered list + future self framing (Week 1 Reel 5)"
+    ],
+    "topics_covered_last_week": [
+      "Founder origin story",
+      "VO₂max decline intro",
+      "Sarcopenia / muscle loss intro",
+      "Norwegian 4x4 protocol explainer",
+      "Split squat, hip hinge, dead hang exercises",
+      "HRV basics — how to find it on Apple Watch"
+    ]
+  },
+  "reels": [
+    {
+      "pillar": "Founder Story",
+      "hook": "I almost didn't build this. Then my Apple Watch showed me something I couldn't ignore.",
+      "script": "I almost didn't build this. Then my Apple Watch showed me something I couldn't ignore.\n\nI was training consistently — or thought I was. Some sessions felt great. Others felt like moving through concrete. Same workouts, same effort, completely different results.\n\nThen I looked at my HRV data in the Health app. Every bad session correlated with a suppressed HRV reading the night before. Every strong session, HRV was elevated.\n\nMy body was already telling me. I just had no app translating that signal into an actual decision.\n\nThat's the moment Fitovo stopped being an idea and became something I had to build.\n\nIf your Apple Watch data could tell you whether today is a push day or a recovery day — would you use it?\n\nComment READY below. I'll put you on the waitlist directly.",
+      "cta": "Comment READY — I'll DM you the waitlist link.",
+      "caption": "I almost didn't build this.\n\nThen my Apple Watch showed me something I couldn't ignore.\n\nI was training consistently, but some sessions felt great and others felt like moving through concrete. Same workouts. Same effort. Totally different results.\n\nThen I pulled up my HRV data.\n\nEvery bad session: HRV suppressed the night before.\nEvery strong session: HRV elevated.\n\nMy body was already signalling. I just had no app translating that into a decision.\n\nThat's the moment Fitovo became something I had to build.\n\nYour Apple Watch is already collecting this data. Every night. For free.\n\nWe're just building the thing that tells you what to do with it.\n\nComment READY below — I'll DM you the waitlist link directly. 👇\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #buildinpublic #indieapp #founderlife #hrv #applewatchfitness #healthspan #agingwell #iosapp",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#buildinpublic",
+        "#indieapp",
+        "#founderlife",
+        "#hrv",
+        "#applewatchfitness",
+        "#healthspan",
+        "#agingwell",
+        "#iosapp"
+      ],
+      "tiktok_caption": "I almost didn't build Fitovo. Then I looked at my own HRV data and the pattern was unmistakable — every terrible workout followed a low HRV night. Every great one followed a high one. My body was already telling me. No app was listening. Comment READY for early access.",
+      "visual_notes": "HeyGen avatar, direct-to-camera, warm and reflective. Casual indoor setting — home office or kitchen. Brief cut to an Apple Watch Health app HRV screen at 'pulled up my HRV data'. Avatar should lean forward slightly at the reveal moment. Pause before 'That's the moment Fitovo became something I had to build.' Let that line land. End with a genuine, curious question delivery — not a hard sell."
+    },
+    {
+      "pillar": "The Science",
+      "hook": "Zone 2 isn't the easy, lazy option. It's where the single most important adaptation in your body happens.",
+      "script": "Zone 2 isn't the easy, lazy option. It's where the single most important adaptation in your body happens.\n\nZone 2 is roughly 60 to 70 percent of your max heart rate — the pace where you can hold a conversation but know you're working.\n\nThis is where mitochondrial density is built. Research from Dr Iñigo San Millán links it directly to long-term metabolic health and longevity markers.\n\nBut most people training 'moderately hard' are stuck in the grey zone — too hard for Zone 2, not hard enough for Zone 5. Maximum fatigue. Minimum adaptation.\n\nThe sweet spot for adults over 40: mostly Zone 2, with occasional Zone 5 sessions — like the Norwegian 4x4 I covered last week.\n\nYour Apple Watch tracks your zone in real time.\n\nSave this — full zone breakdown is in the carousel.",
+      "cta": "Save this — and follow for the full heart rate zone carousel.",
+      "caption": "Most people training 'moderately hard' are stuck in the grey zone.\n\nToo hard for Zone 2.\nNot hard enough for Zone 5.\n\nMaximum fatigue. Minimum adaptation.\n\nZone 2 — 60–70% of max HR — is where mitochondrial density is built. Research from Dr Iñigo San Millán links it to some of the strongest longevity markers in exercise science.\n\nAfter 40, mitochondrial efficiency matters more than ever. Zone 2 isn't the easy option — it's deliberate medicine.\n\nThe model that research keeps pointing to:\n→ Mostly Zone 2\n→ Occasional Zone 5 (Norwegian 4x4)\n→ As little time in the middle as possible\n\nYour Apple Watch tracks this in real time.\nFitovo schedules it for days your body is actually ready.\n\nSave this 🔖 — full zone breakdown in the carousel this week.\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #zonetraining #zone2 #heartratevariability #exercisescience #vo2max #healthspan #mitochondria #agingwell",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#zonetraining",
+        "#zone2",
+        "#heartratevariability",
+        "#exercisescience",
+        "#vo2max",
+        "#healthspan",
+        "#mitochondria",
+        "#agingwell"
+      ],
+      "tiktok_caption": "Zone 2 isn't the lazy option — it's where longevity is built. Most people train too hard for Zone 2, not hard enough for Zone 5, and get all the fatigue with none of the adaptation. Here's the fix. Save this.",
+      "visual_notes": "HeyGen avatar, confident and clear delivery. Overlay a simple horizontal bar graphic showing the 5 heart rate zones — highlight Zone 2 in green and Zone 5 in red, grey out the middle. At 'grey zone' beat, visually highlight Zones 3–4 as ambiguous. End with avatar smiling — this is good news, practical and empowering."
+    },
+    {
+      "pillar": "The Science",
+      "hook": "Have you ever pushed through a hard workout feeling completely drained — and felt worse for a week afterward?",
+      "script": "Have you ever pushed through a hard workout feeling completely drained — and felt worse for a week afterward?\n\nThat's not weakness. It's your body signalling something most apps ignore.\n\nTraining hard without adequate recovery leads to something called non-functional overreaching — performance drops, recovery extends, hormones shift. You feel like you're going backwards despite putting in the work.\n\nAfter 40, this happens more. Your recovery window is longer. You cannot bounce back in 24 hours the way you did at 25.\n\nHRV is the clearest readiness signal your body produces. When it's suppressed, training hard is like flooring the accelerator with the handbrake on.\n\nYour Apple Watch measures this while you sleep. Every night. Most people just don't know what to do with the number.\n\nFollow — I'll show you exactly how to use it.",
+      "cta": "Follow — next video shows you how to actually use your HRV number.",
+      "caption": "Pushing through exhaustion doesn't make you tougher after 40.\n\nIt makes you slower to recover.\n\nThere's a phenomenon called non-functional overreaching — training hard when your body hasn't recovered. Performance drops. Hormones shift. Recovery extends. You feel like you're going backwards even though you're putting in the work.\n\nAfter 40, recovery windows are longer. That's not an excuse — it's biology.\n\nHRV is the clearest readiness signal your nervous system produces. When it's suppressed, your body is still under load. Training hard on that day is counterproductive.\n\nYour Apple Watch measures this every night while you sleep. For free.\n\nThe problem is knowing what to do with the number.\n\nThat's exactly what Fitovo is built to solve.\n\nFollow for the HRV explainer — and comment SMART for early access to the app. 👇\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #hrv #heartratevariability #recoveryday #overtraining #exercisescience #applewatchfitness #readinesstraining #healthspan",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#hrv",
+        "#heartratevariability",
+        "#recoveryday",
+        "#overtraining",
+        "#exercisescience",
+        "#applewatchfitness",
+        "#readinesstraining",
+        "#healthspan"
+      ],
+      "tiktok_caption": "Training hard when you're not recovered doesn't build fitness after 40 — it sets you back. Non-functional overreaching is real and your HRV is already warning you. Comment SMART for early access to Fitovo — it turns your Apple Watch data into daily training decisions.",
+      "visual_notes": "HeyGen avatar, empathetic and grounded delivery — this should feel like understanding, not a lecture. At 'handbrake on' moment, consider a simple graphic: a car wheel with a brake graphic. Brief cut to Apple Watch sleep tracking screen. Tone: warm coach who gets it. The opening question should be delivered slowly, with a pause after, to let it resonate."
+    },
+    {
+      "pillar": "The Wake-Up Call",
+      "hook": "Working out every day doesn't cancel out 8 hours of sitting. The research on this is uncomfortably clear.",
+      "script": "Working out every day doesn't cancel out 8 hours of sitting. The research on this is uncomfortably clear.\n\nA landmark study of 800,000 people found prolonged sitting time independently predicted mortality — even in people who exercised regularly. They called it the active couch potato paradox.\n\nAfter 40, your insulin sensitivity and metabolic health are more sensitive to sedentary time than ever.\n\nThe fix isn't more exercise. It's breaking up sitting time. Research suggests two minutes of movement every 30 minutes offsets a significant portion of the harm.\n\nA short walk. A few bodyweight squats. Even just standing up and moving around.\n\nNot a big ask. But a significant difference over decades.\n\nComment SIT — I'll DM you the full movement snack protocol.",
+      "cta": "Comment SIT — I'll send you the full movement snack protocol.",
+      "caption": "You exercise every day.\n\nAnd you're still sitting for 8 hours.\n\nA study of 800,000+ people found prolonged sitting predicted mortality independently — even in regularly active people. They named it the 'active couch potato paradox'.\n\nAfter 40, your insulin sensitivity and metabolic health are more sensitive to sedentary time than they were at 25. Long stretches of sitting compound the problem in ways a single workout can't fully undo.\n\nThe prescription isn't more gym time.\n\nIt's movement snacks:\n→ 2 minutes of movement every 30 minutes\n→ A short walk. A few squats. Even just standing.\n→ Set a timer if you need to\n\nSmall interruption. Significant benefit over decades.\n\nComment SIT below — I'll DM you the full movement snack protocol. 👇\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #sedentarylifestyle #healthspan #agingwell #metabolichealth #movementsnacks #exercisescience #longevity #strengthafter40",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#sedentarylifestyle",
+        "#healthspan",
+        "#agingwell",
+        "#metabolichealth",
+        "#movementsnacks",
+        "#exercisescience",
+        "#longevity",
+        "#strengthafter40"
+      ],
+      "tiktok_caption": "You exercise daily but sit for 8 hours? That's the 'active couch potato' problem. 800,000-person study: prolonged sitting predicts mortality EVEN in active people. The fix is simple. Comment SIT and I'll send the protocol.",
+      "visual_notes": "HeyGen avatar, measured and slightly confrontational delivery on the opening line — let it land. Pause before 'uncomfortably clear'. Consider a simple split-screen graphic: one side showing 30-min workout, the other showing 8 hours sitting. End on an empowering, practical note — the movement snack framing should feel achievable, not alarming."
+    },
+    {
+      "pillar": "The Wake-Up Call",
+      "hook": "There's a 30-second test researchers link to your decade-long survival odds. Your GP has probably never mentioned it.",
+      "script": "There's a 30-second test researchers link to your decade-long survival odds. Your GP has probably never mentioned it.\n\nThe sit-to-stand test. Sit cross-legged on the floor and stand back up without using your hands. Each time you use a hand, forearm, or knee for support — minus one point from ten.\n\nA study of 2,000 adults published in the European Journal of Preventive Cardiology found that each point lost was associated with significantly higher all-cause mortality risk.\n\nIt's not the sitting and standing that matter. It's what the test reveals: hip mobility, leg strength, balance — everything that determines whether you're functional and independent at 80.\n\nAnd every single one of those qualities is trainable.\n\nGo try it right now. Then come back and drop your score in the comments.",
+      "cta": "Try the test — and drop your score in the comments.",
+      "caption": "Try this right now.\n\nSit cross-legged on the floor.\nStand up. Without using your hands.\n\nEach assist — a hand, forearm, or knee — costs you one point from ten.\n\nA study of 2,000+ adults in the European Journal of Preventive Cardiology found that each point lost was significantly associated with all-cause mortality risk over the following decade.\n\nThis isn't about the movement itself. It's what the test reveals:\n→ Hip mobility\n→ Leg strength\n→ Balance and coordination\n→ Body composition\n\nAll the markers of long-term functional independence. All of them trainable.\n\nDrop your score in the comments. Genuinely — I want to know where people are starting from.\n\nAnd if you want a training plan that actually works on these markers, the waitlist is in the bio. 👆\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #functionalfitness #strengthafter40 #mobilitytraining #healthspan #agingwell #longevity #exercisescience #sarcopenia",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#functionalfitness",
+        "#strengthafter40",
+        "#mobilitytraining",
+        "#healthspan",
+        "#agingwell",
+        "#longevity",
+        "#exercisescience",
+        "#sarcopenia"
+      ],
+      "tiktok_caption": "Sit cross-legged on the floor. Stand up without using your hands. Each assist = -1 from 10. Researchers linked this to 10-year mortality risk in a 2,000+ person study. Drop your score in the comments — genuinely curious where people are starting.",
+      "visual_notes": "HeyGen avatar, energetic and challenge-style delivery — this should feel like a game, not a medical warning. Consider a simple on-screen scoring graphic: '10 = perfect / -1 per assist'. Avatar should gesture downward when describing the sitting motion, upward for standing. End on warm, inviting CTA — curious and encouraging, not clinical."
+    }
+  ],
+  "carousels": [
+    {
+      "pillar": "The Science",
+      "title": "The 5 heart rate zones — and why only 2 matter for longevity after 40",
+      "slides": [
+        "The 5 heart rate zones\n— and why only 2 matter for longevity after 40",
+        "Zone 1: 50–60% max HR\nActive recovery. Easy walks. Feels good.\nAdaptation? Minimal.",
+        "Zone 2: 60–70% max HR\nYou can talk in full sentences. Mitochondria are being built.\nThis is longevity medicine.",
+        "Zones 3–4: 70–85% max HR\nThe 'grey zone'. Feels productive.\nMost recreational athletes live here. Research says they shouldn't.",
+        "Zone 5: 85–95% max HR\nMaximum effort. Norwegian 4x4 territory.\nBuilds VO₂max. Powerful — in small doses.",
+        "The polarised model:\nMostly Zone 2. Occasional Zone 5.\nResearch consistently shows this outperforms grey-zone training.",
+        "How to find your zones\nMax HR ≈ 220 minus your age.\nZone 2 = 60–70% of that.\nCan you talk in sentences? You're in Zone 2.",
+        "Your Apple Watch tracks this in real time.\nFitovo schedules sessions around your zones AND your readiness.\nWaitlist → link in bio."
+      ],
+      "caption": "Most people train in the wrong zone.\n\nNot because they're lazy — because nobody explained this clearly.\n\nSwipe through — this is the framework that changes how you think about cardio. 👉\n\nSave it. Share it with someone grinding in the grey zone.\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #zonetraining #zone2 #norwegian4x4 #vo2max #exercisescience #heartratevariability #applewatchfitness #healthspan #agingwell",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#zonetraining",
+        "#zone2",
+        "#norwegian4x4",
+        "#vo2max",
+        "#exercisescience",
+        "#heartratevariability",
+        "#applewatchfitness",
+        "#healthspan",
+        "#agingwell"
+      ]
+    },
+    {
+      "pillar": "Actionable Tips",
+      "title": "The exact 3-workout week for adults over 40 — backed by the research",
+      "slides": [
+        "The exact 3-workout week for adults over 40\n(backed by the research)",
+        "Why 3 sessions?\n\nResearch shows 3 structured sessions outperform 5 mediocre ones.\nRecovery is where adaptation happens.",
+        "Session 1: Zone 2 cardio\n30–45 minutes. Run, cycle, row.\nConversational pace. Builds mitochondria. Protects your heart.",
+        "Session 2: Norwegian 4x4\n10 min warm-up → 4 × 4 min at 85–95% HR → cool down.\nTotal effort: 16 minutes. Builds VO₂max.",
+        "Session 3: Strength\n3 sets × 6–8 exercises. Squat, hinge, push, pull, carry.\n45–60 minutes. Fights sarcopenia.",
+        "Recovery matters.\n\n48–72 hours between hard sessions.\nYour HRV tells you when you're actually ready.",
+        "The rule: stress → recovery → adaptation.\n\nSkip recovery = skip adaptation.\nMore sessions ≠ more progress after 40.",
+        "Fitovo builds this structure for you — automatically.\nAdjusted to your readiness every single day.\nWaitlist → link in bio."
+      ],
+      "caption": "You don't need 5 sessions a week.\n\nYou need 3 really good ones — with enough recovery to actually adapt.\n\nHere's the evidence-backed structure for adults over 40. 👉\n\nSave this. Come back to it every Monday.\n\n#fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #strengthafter40 #bodyweightexercises #zone2 #norwegian4x4 #exercisescience #healthspan #sarcopenia #recoveryday #agingwell",
+      "hashtags": [
+        "#fitovo",
+        "#longevitytraining",
+        "#fitnessafter40",
+        "#fitnessafter50",
+        "#trainsmarter",
+        "#strengthafter40",
+        "#bodyweightexercises",
+        "#zone2",
+        "#norwegian4x4",
+        "#exercisescience",
+        "#healthspan",
+        "#sarcopenia",
+        "#recoveryday",
+        "#agingwell"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "day": "Monday",
+      "concepts": [
+        "Poll: 'How many hours a day do you think you spend sitting?' — Under 4 / 4–7 / 8–10 / More than 10",
+        "Text overlay: 'Week 2. Zone training, the readiness paradox, and a 30-second test for your functional fitness age — all dropping this week. Follow so you don't miss it. 👀'",
+        "Question box: 'If an app told you today that your body wasn't ready for a hard session — would you actually rest? Be honest.'"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "concepts": [
+        "Poll: 'Which zone do you spend most of your training time in?' — Easy & comfortable / Medium hard / All-out effort / I have no idea",
+        "Behind-the-scenes: screenshot of Fitovo readiness screen design or HRV logic flowchart with overlay text: 'Building the brain of the app — the part that actually makes training decisions from your data.'",
+        "Quick tip text overlay: 'Zone 2 check: you should be able to speak in full sentences. If you're too breathless to talk, you've drifted into Zone 3. Ease off and bring it back.'"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "concepts": [
+        "Quiz sticker: 'What does VO₂max measure? A) Blood pressure  B) How efficiently your body uses oxygen  C) Resting heart rate  D) Sleep quality' — Reveal answer B with a brief explanation text sticker",
+        "Poll: 'Are you more of a cardio person or a strength person?' — Pure cardio / Pure strength / Mix of both / Neither right now",
+        "Text overlay teaser: 'The sit-to-stand test is in the feed today. Try it before you watch the video. You might be surprised. 👀'"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "concepts": [
+        "Question box: 'What's your biggest barrier to exercising consistently?' — Time / Energy / Motivation / Not knowing what to do / Something else",
+        "Text overlay tip: 'Your Apple Watch measured your HRV last night. Higher than usual = green light for a hard session. Lower = go easy or rest. Check it: Health app → Browse → Heart → Heart Rate Variability.'",
+        "Poll: 'Do you check any health metrics on your Apple Watch regularly?' — Yes, all the time / Sometimes / I have one but don't check / No Apple Watch / No wearable'"
+      ]
+    },
+    {
+      "day": "Friday",
+      "concepts": [
+        "Behind-the-scenes: photo of open research papers or browser tabs with text overlay: 'Deep in the Zone 2 literature again. The more I read, the more I think most fitness advice for adults over 40 is pointing in the wrong direction.'",
+        "Question box: 'What's one thing you suspect might be working against your fitness goals — but you keep doing anyway? Curious.'",
+        "Text overlay: 'Reminder: your muscles adapt during recovery, not during the workout. If rest days feel like failure, that's worth examining. Rest is not laziness. It's part of the prescription.'"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "concepts": [
+        "Poll: 'Saturday check-in — how's your body feeling after this week?' — Strong and ready / Pretty good / A bit tired / Completely flat",
+        "Countdown sticker (to May 2026 launch) with text: 'Fitovo is coming. Waitlist is open — link in bio. Early access spots won't last long.'",
+        "Quick tip text overlay: 'Movement snack for today: 10 slow bodyweight squats every hour. Takes 30 seconds. Breaks up sitting time. Your insulin sensitivity will thank you.'"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "concepts": [
+        "Question box: 'What would make you actually stick to a training plan long-term? What's worked for you in the past — and what hasn't?'",
+        "Poll: 'Honest check-in — how do you feel about where your fitness is right now?' — Happy with it / Could be better / Need a complete reset / Just getting started",
+        "Text overlay: 'Training this week? Check your resting heart rate first. If it's elevated 5–7 bpm above your usual baseline, your body is under stress. Factor that in before you decide how hard to push.'"
+      ]
+    }
+  ]
+}
