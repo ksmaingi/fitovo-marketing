@@ -209,13 +209,13 @@ HeyGen avatar, direct-to-camera. Measured, clear delivery — let the stats land
 **ManyChat trigger:** 4X4
 
 **HOOK (first 3 seconds):**
-> "Norwegian researchers found the most effective cardio protocol ever studied. It takes 16 minutes."
+> "What if I told you the single best predictor of how long you'll live isn't cholesterol — and you can train it in 16 minutes a week?"
 
 ---
 
 **SCRIPT (30–45 seconds — direct to camera):**
 
-> Norwegian researchers found the most effective cardio protocol ever studied. It takes 16 minutes.
+> What if I told you the single best predictor of how long you'll live isn't cholesterol — and you can train it in 16 minutes a week?
 >
 > The Norwegian 4x4 was developed at the Norwegian University of Science and Technology. Here's how it works.
 >
@@ -231,7 +231,7 @@ HeyGen avatar, direct-to-camera. Measured, clear delivery — let the stats land
 >
 > Fitovo will guide you through these sessions automatically — and only schedule them on days your biometrics say you're ready.
 >
-> Comment 4X4 below and I'll send you the full protocol breakdown.
+> Comment 4X4 below and I'll send you the full protocol guide.
 
 **END CTA:**
 > "Comment 4X4 and I'll send you the full protocol."
@@ -257,7 +257,7 @@ You can run, cycle, row. Your Apple Watch tells you when you're in zone.
 
 Fitovo will schedule these sessions on days your body is actually ready for them.
 
-Comment 4X4 below — I'll send the full protocol breakdown. 👇
+Comment 4X4 below — I'll send you the full protocol breakdown. 👇
 
 #fitovo #longevitytraining #fitnessafter40 #fitnessafter50 #trainsmarter #norwegian4x4 #vo2max #exercisescience #zonetraining #hrv #heartratevariability #applewatchfitness #healthspan
 
@@ -294,7 +294,6 @@ HeyGen avatar, energetic but precise. Consider overlaying a simple diagram of th
 >
 > These aren't trending. They're not flashy. But the research on what keeps people functional into their 70s and 80s keeps pointing at exactly these patterns.
 >
-> Save this and come back to it.
 
 **END CTA:**
 > "Save this — and follow for weekly exercises backed by actual science."
