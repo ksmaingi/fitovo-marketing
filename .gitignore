@@ -1,0 +1,8 @@
+# Personal Claude Code settings (not shared)
+.claude/settings.local.json
+
+# Local backups of content calendar files
+content-calendar/*-old.json
+
+# macOS
+.DS_Store

@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitovo Social Media Strategy | StratArts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .container { margin: 0 auto; background: #0a0a0a; }
+
+        /* === HEADER === */
+        header {
+            background: #0a0a0a;
+            padding: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1600px;
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+            padding: 4rem 4rem 3rem 4rem;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .header-content::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect fill="rgba(255,255,255,0.05)" width="50" height="50"/></svg>');
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .kicker { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; opacity: 0.9; margin-bottom: 0.5rem; }
+        h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; }
+        .subtitle { font-size: 1.3rem; opacity: 0.95; font-weight: 400; margin-bottom: 2rem; }
+
+        .meta-info {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            flex-wrap: wrap;
+        }
+
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+
+        /* === SCORE BANNER === */
+        .score-banner { background: #0a0a0a; padding: 0; display: flex; justify-content: center; }
+
+        .score-container {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 3rem 4rem;
+            background: #1a1a1a;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .score-main { text-align: center; }
+
+        .score-number {
+            font-size: 5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .score-label { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: #a3a3a3; margin-top: 0.5rem; font-weight: 600; }
+
+        .score-interpretation { border-left: 3px solid #10b981; padding-left: 2rem; }
+        .interpretation-title { font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; color: #f5f5f5; }
+        .interpretation-text { color: #d4d4d4; line-height: 1.7; }
+
+        .verdict-badge {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        /* === CONTENT === */
+        .content { max-width: 1600px; margin: 0 auto; padding: 4rem 4rem; background: #0a0a0a; }
+        .section { margin-bottom: 4rem; }
+        .section:last-child { margin-bottom: 2rem; }
+        .section-header { margin-bottom: 2rem; }
+        .section-title { font-size: 2rem; font-weight: 700; color: #f5f5f5; margin-bottom: 0.5rem; }
+        .section-description { font-size: 1.05rem; color: #d4d4d4; max-width: 900px; }
+
+        /* === GOALS === */
+        .goals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+
+        .goal-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .goal-card.primary { border-color: #10b981; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.15); }
+
+        .goal-rank {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .goal-name { font-weight: 700; font-size: 1.2rem; color: #f5f5f5; margin-bottom: 0.5rem; }
+        .goal-target { font-size: 1.6rem; font-weight: 700; color: #10b981; margin-bottom: 0.5rem; line-height: 1.3; }
+        .goal-description { font-size: 0.9rem; color: #a3a3a3; }
+
+        /* === PLATFORM === */
+        .platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+
+        .platform-card {
+            background: #1a1a1a;
+            border: 2px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .platform-card.primary { border-color: #10b981; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.15); }
+        .platform-card.secondary { border-color: rgba(16, 185, 129, 0.5); }
+        .platform-card.experimental { border-style: dashed; }
+        .platform-card.skip { border-color: rgba(163, 163, 163, 0.2); opacity: 0.7; }
+
+        .platform-card:hover { transform: translateY(-2px); border-color: #10b981; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2); }
+
+        .platform-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .platform-name { font-weight: 700; font-size: 1.2rem; color: #f5f5f5; }
+        .platform-score { font-size: 1.5rem; font-weight: 700; color: #10b981; }
+
+        .platform-priority {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .platform-priority.skip { background: linear-gradient(135deg, #525252 0%, #404040 100%); }
+
+        .platform-scores { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; margin-bottom: 1rem; }
+        .score-item { display: flex; justify-content: space-between; font-size: 0.85rem; color: #a3a3a3; }
+        .score-item .value { color: #10b981; font-weight: 600; }
+
+        .platform-effort { font-size: 0.9rem; color: #d4d4d4; text-align: center; padding-top: 0.75rem; border-top: 1px solid rgba(16, 185, 129, 0.2); }
+        .platform-effort strong { color: #10b981; }
+
+        /* === STRATEGY === */
+        .strategy-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; }
+
+        .strategy-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .strategy-card.primary-platform { border-color: #10b981; }
+
+        .strategy-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+        .strategy-title { font-weight: 700; font-size: 1.3rem; color: #f5f5f5; }
+        .strategy-badge {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .strategy-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .strategy-section h4 { font-size: 1rem; font-weight: 700; color: #10b981; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        .content-mix-list, .format-list { list-style: none; }
+        .content-mix-list li, .format-list li {
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #d4d4d4;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-mix-list li strong, .format-list li strong { color: #10b981; }
+
+        .posting-schedule { background: #0a0a0a; border-radius: 8px; padding: 1rem; margin-top: 1rem; }
+        .schedule-row {
+            display: grid;
+            grid-template-columns: 90px 1fr 1.5fr;
+            gap: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+            font-size: 0.85rem;
+        }
+        .schedule-row:last-child { border-bottom: none; }
+        .schedule-row .day { color: #f5f5f5; font-weight: 600; }
+        .schedule-row .time { color: #10b981; }
+        .schedule-row .type { color: #a3a3a3; }
+
+        /* === PILLARS === */
+        .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+
+        .pillar-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .pillar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .pillar-name { font-weight: 700; font-size: 1.1rem; color: #f5f5f5; }
+        .pillar-percentage { font-size: 1.3rem; font-weight: 700; color: #10b981; }
+        .pillar-theme { font-size: 0.9rem; color: #a3a3a3; margin-bottom: 1rem; font-style: italic; }
+
+        .pillar-topics { list-style: none; margin-top: 1rem; }
+        .pillar-topics li {
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+            color: #d4d4d4;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        }
+        .pillar-topics li:before { content: "→ "; color: #10b981; }
+        .pillar-topics li:last-child { border-bottom: none; }
+
+        /* === CALENDAR === */
+        .calendar-section {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .calendar-month { margin-bottom: 2rem; }
+        .calendar-month:last-child { margin-bottom: 0; }
+
+        .month-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #10b981;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .month-name { font-weight: 700; font-size: 1.2rem; color: #f5f5f5; }
+        .month-theme { font-size: 0.9rem; color: #10b981; font-style: italic; }
+
+        .calendar-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+
+        .calendar-table th {
+            text-align: left;
+            padding: 0.75rem;
+            background: #0a0a0a;
+            color: #10b981;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.75rem;
+        }
+
+        .calendar-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+            color: #d4d4d4;
+            vertical-align: top;
+        }
+
+        .calendar-table tr:last-child td { border-bottom: none; }
+
+        .calendar-platform {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* === ENGAGEMENT === */
+        .engagement-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+
+        .engagement-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .engagement-title { font-weight: 700; font-size: 1.1rem; color: #f5f5f5; margin-bottom: 1rem; }
+
+        .routine-list { list-style: none; }
+        .routine-list li {
+            padding: 0.75rem 0;
+            font-size: 0.9rem;
+            color: #d4d4d4;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .routine-list li:last-child { border-bottom: none; }
+        .routine-time { color: #10b981; font-weight: 600; font-size: 0.8rem; white-space: nowrap; }
+
+        /* === INFLUENCERS === */
+        .influencer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2rem; }
+
+        .influencer-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .influencer-name { font-weight: 700; color: #f5f5f5; font-size: 0.95rem; margin-bottom: 0.25rem; }
+        .influencer-handle { color: #10b981; font-size: 0.8rem; margin-bottom: 0.5rem; }
+        .influencer-followers { color: #a3a3a3; font-size: 0.8rem; margin-bottom: 0.5rem; }
+        .influencer-reason { color: #d4d4d4; font-size: 0.8rem; font-style: italic; }
+
+        /* === METRICS === */
+        .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem; }
+
+        .metric-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .metric-card .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a3a3a3;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .metric-card .current { font-size: 1.8rem; font-weight: 700; color: #10b981; }
+        .metric-card .target { font-size: 0.9rem; color: #d4d4d4; margin-top: 0.25rem; }
+        .metric-card .target strong { color: #10b981; }
+
+        /* === CHARTS === */
+        .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+
+        .chart-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .chart-card.full-width { grid-column: 1 / -1; }
+        .chart-title { font-weight: 700; font-size: 1.1rem; color: #f5f5f5; margin-bottom: 0.5rem; }
+        .chart-subtitle { font-size: 0.9rem; color: #a3a3a3; margin-bottom: 1.5rem; }
+        .chart-wrapper { position: relative; height: 300px; }
+        .chart-wrapper.tall { height: 400px; }
+
+        /* === ROADMAP === */
+        .roadmap-phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+
+        .phase-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .phase-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem; }
+        .phase-name { font-weight: 700; font-size: 1.1rem; color: #f5f5f5; }
+        .phase-timeline { color: #10b981; font-size: 0.85rem; font-weight: 600; }
+        .phase-focus { font-size: 0.9rem; color: #a3a3a3; font-style: italic; margin-bottom: 1rem; }
+
+        .phase-tasks { list-style: none; }
+        .phase-tasks li {
+            padding: 0.5rem 0;
+            font-size: 0.85rem;
+            color: #d4d4d4;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        }
+        .phase-tasks li:before { content: "☐ "; color: #10b981; }
+        .phase-tasks li:last-child { border-bottom: none; }
+
+        .phase-goals { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(16, 185, 129, 0.2); }
+        .phase-goals h5 { color: #10b981; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+        .phase-goals p { font-size: 0.85rem; color: #d4d4d4; }
+
+        /* === FOOTER === */
+        footer { background: #0a0a0a; display: flex; justify-content: center; }
+
+        .footer-content {
+            max-width: 1600px;
+            width: 100%;
+            background: #1a1a1a;
+            color: #a3a3a3;
+            padding: 2rem 4rem;
+            font-size: 0.85rem;
+            text-align: center;
+            border-top: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .footer-content p { margin: 0.3rem 0; }
+        .footer-content strong { color: #10b981; }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 1200px) {
+            .platform-grid, .pillars-grid, .roadmap-phases { grid-template-columns: repeat(2, 1fr); }
+            .influencer-grid, .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .goals-grid, .platform-grid, .pillars-grid, .engagement-grid, .roadmap-phases { grid-template-columns: 1fr; }
+            .chart-grid, .influencer-grid, .metrics-grid { grid-template-columns: 1fr; }
+            .strategy-content { grid-template-columns: 1fr; }
+            .score-container { grid-template-columns: 1fr; text-align: center; }
+            .score-interpretation { border-left: none; border-top: 3px solid #10b981; padding-left: 0; padding-top: 1.5rem; }
+            .header-content, .score-container, .content, .footer-content { padding: 2rem; }
+        }
+
+        @media print {
+            body { background: white; color: #000; }
+            .header-content { background: white; color: #000; border: 2px solid #10b981; }
+            .header-content::before { display: none; }
+            .score-container, .content, .chart-card, .platform-card, .strategy-card, .pillar-card, .engagement-card, .metric-card, .phase-card, .calendar-section { background: white; border: 1px solid #10b981; }
+            .score-number { -webkit-text-fill-color: #10b981; }
+            .footer-content { background: white; border-top: 2px solid #10b981; }
+            canvas { max-width: 100%; height: auto !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="header-content">
+                <div class="kicker">StratArts Social Media Strategist</div>
+                <h1>Fitovo Social Media Strategy</h1>
+                <div class="subtitle">Building a longevity-training category leader for adults 40–65 — launching May 2026</div>
+                <div class="meta-info">
+                    <div class="meta-item"><span>📅</span><span>Last revised: 2026-04-13 (post Week-3 diagnostic)</span></div>
+                    <div class="meta-item"><span>📊</span><span>Scaled to 3 hrs/week, DIY, ~$500 paid through launch</span></div>
+                    <div class="meta-item"><span>🎯</span><span>Platforms: 3 (IG primary, TikTok secondary, LinkedIn experimental)</span></div>
+                    <div class="meta-item"><span>🚀</span><span>Launch: Early May 2026</span></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SCORE BANNER -->
+        <div class="score-banner">
+            <div class="score-container">
+                <div class="score-main">
+                    <div class="score-number">3</div>
+                    <div class="score-label">Hours Per Week</div>
+                </div>
+
+                <div class="score-interpretation">
+                    <div class="interpretation-title">Calibrated to a DIY founder budget</div>
+                    <div class="interpretation-text">The binding constraint: Kulvinder is a parent with a full-time other job. No outside hires. 3 hours/week max for Fitovo marketing. At that budget: 2 Reels + 1 Carousel + 5 Stories/week, produced through the Claude scheduled task → HeyGen (batch-rendered Monday) → Descript → Gamma → Later pipeline. Engagement: 10 min × 5 weekdays. Paid ads (~$500 through launch) carry the growth work that founder time can't.</div>
+                </div>
+
+                <div class="verdict-badge">SUSTAINABLE</div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content">
+
+            <!-- SECTION: Goals -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Social Media Goals</h2>
+                    <p class="section-description">Three compounding goals that survive the launch transition. Waitlist conversion is the immediate job; thought leadership is the moat; community is the flywheel that powers everything from Month 2 onward.</p>
+                </div>
+
+                <div class="goals-grid">
+                    <div class="goal-card primary">
+                        <div class="goal-rank">Priority 1</div>
+                        <div class="goal-name">Waitlist → Launch Velocity</div>
+                        <div class="goal-target">250–300<br>waitlist by May 4</div>
+                        <div class="goal-description">Primarily driven by ~$500 of Meta Lead Gen paid spend (organic alone can't carry this at 3 hrs/week). Convert 40%+ to installs in Week 1 post-launch. ManyChat "Comment READY" on every Reel for supplementary organic capture.</div>
+                    </div>
+
+                    <div class="goal-card primary">
+                        <div class="goal-rank">Priority 2</div>
+                        <div class="goal-name">Own "Fitness After 40"</div>
+                        <div class="goal-target">8–10k<br>IG followers by M12</div>
+                        <div class="goal-description">Niche thought leadership via 2 Reels + 1 Carousel per week. Evidence + empathy wins in a niche with neither. Science + Actionable pillars = 45% of content. Quality over volume — 2 well-supported Reels beats 5 ignored ones.</div>
+                    </div>
+
+                    <div class="goal-card primary">
+                        <div class="goal-rank">Priority 3</div>
+                        <div class="goal-name">Sustainable Growth</div>
+                        <div class="goal-target">30%<br>organic acquisition share by M6</div>
+                        <div class="goal-description">Paid ads carry 50–60% of acquisition at launch (time constraint); organic share rises as the flywheel compounds. DMs replied within 24h. #FitovoMember launches M2. The rule: marketing must stay within 3 hrs/week forever.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Platform Selection -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Platform Selection Matrix</h2>
+                    <p class="section-description">Platforms evaluated on Audience Fit, Content Fit, Competition (low competition = high score), and Resources (can we sustain it weekly?). Each 1-10. Total /40.</p>
+                </div>
+
+                <div class="platform-grid">
+                    <div class="platform-card primary">
+                        <div class="platform-header">
+                            <div class="platform-name">Instagram</div>
+                            <div class="platform-score">34/40</div>
+                        </div>
+                        <div class="platform-priority">Primary</div>
+                        <div class="platform-scores">
+                            <div class="score-item"><span>Audience Fit</span><span class="value">10</span></div>
+                            <div class="score-item"><span>Content Fit</span><span class="value">9</span></div>
+                            <div class="score-item"><span>Competition</span><span class="value">6</span></div>
+                            <div class="score-item"><span>Resources</span><span class="value">9</span></div>
+                        </div>
+                        <div class="platform-effort"><strong>55%</strong> of effort · Reels-led</div>
+                    </div>
+
+                    <div class="platform-card secondary">
+                        <div class="platform-header">
+                            <div class="platform-name">TikTok</div>
+                            <div class="platform-score">31/40</div>
+                        </div>
+                        <div class="platform-priority">Secondary</div>
+                        <div class="platform-scores">
+                            <div class="score-item"><span>Audience Fit</span><span class="value">7</span></div>
+                            <div class="score-item"><span>Content Fit</span><span class="value">9</span></div>
+                            <div class="score-item"><span>Competition</span><span class="value">7</span></div>
+                            <div class="score-item"><span>Resources</span><span class="value">8</span></div>
+                        </div>
+                        <div class="platform-effort"><strong>25%</strong> of effort · Cross-post + native founder</div>
+                    </div>
+
+                    <div class="platform-card experimental">
+                        <div class="platform-header">
+                            <div class="platform-name">LinkedIn</div>
+                            <div class="platform-score">28/40</div>
+                        </div>
+                        <div class="platform-priority">Experimental</div>
+                        <div class="platform-scores">
+                            <div class="score-item"><span>Audience Fit</span><span class="value">6</span></div>
+                            <div class="score-item"><span>Content Fit</span><span class="value">6</span></div>
+                            <div class="score-item"><span>Competition</span><span class="value">9</span></div>
+                            <div class="score-item"><span>Resources</span><span class="value">7</span></div>
+                        </div>
+                        <div class="platform-effort"><strong>10%</strong> of effort · Founder-led building-in-public</div>
+                    </div>
+
+                    <div class="platform-card skip">
+                        <div class="platform-header">
+                            <div class="platform-name">YouTube Shorts</div>
+                            <div class="platform-score">26/40</div>
+                        </div>
+                        <div class="platform-priority skip">Defer to M4+</div>
+                        <div class="platform-scores">
+                            <div class="score-item"><span>Audience Fit</span><span class="value">7</span></div>
+                            <div class="score-item"><span>Content Fit</span><span class="value">9</span></div>
+                            <div class="score-item"><span>Competition</span><span class="value">6</span></div>
+                            <div class="score-item"><span>Resources</span><span class="value">4</span></div>
+                        </div>
+                        <div class="platform-effort">Test only when bandwidth allows</div>
+                    </div>
+
+                    <div class="platform-card skip">
+                        <div class="platform-header">
+                            <div class="platform-name">Facebook</div>
+                            <div class="platform-score">20/40</div>
+                        </div>
+                        <div class="platform-priority skip">Skip</div>
+                        <div class="platform-scores">
+                            <div class="score-item"><span>Audience Fit</span><span class="value">8</span></div>
+                            <div class="score-item"><span>Content Fit</span><span class="value">4</span></div>
+                            <div class="score-item"><span>Competition</span><span class="value">5</span></div>
+                            <div class="score-item"><span>Resources</span><span class="value">3</span></div>
+                        </div>
+                        <div class="platform-effort">Declining for new-brand discovery · Revisit M6+</div>
+                    </div>
+
+                    <div class="platform-card skip">
+                        <div class="platform-header">
+                            <div class="platform-name">X / Twitter</div>
+                            <div class="platform-score">18/40</div>
+                        </div>
+                        <div class="platform-priority skip">Skip</div>
+                        <div class="platform-scores">
+                            <div class="score-item"><span>Audience Fit</span><span class="value">3</span></div>
+                            <div class="score-item"><span>Content Fit</span><span class="value">5</span></div>
+                            <div class="score-item"><span>Competition</span><span class="value">6</span></div>
+                            <div class="score-item"><span>Resources</span><span class="value">4</span></div>
+                        </div>
+                        <div class="platform-effort">Audience not here · Don't dilute</div>
+                    </div>
+                </div>
+
+                <div class="chart-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Platform Score Comparison</h3>
+                        <p class="chart-subtitle">Radar view of platform strengths across evaluation criteria</p>
+                        <div class="chart-wrapper">
+                            <canvas id="platformScoreChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Effort Allocation</h3>
+                        <p class="chart-subtitle">How founder time is distributed across platforms</p>
+                        <div class="chart-wrapper">
+                            <canvas id="effortChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Platform Strategies -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Platform-Specific Strategies</h2>
+                    <p class="section-description">Detailed content mix, format mix, and posting schedule for the three active platforms.</p>
+                </div>
+
+                <div class="strategy-grid">
+                    <!-- Instagram -->
+                    <div class="strategy-card primary-platform">
+                        <div class="strategy-header">
+                            <div class="strategy-title">Instagram — Primary</div>
+                            <div class="strategy-badge">55% of effort · 2 Reels + 1 Carousel + 5 Stories / week</div>
+                        </div>
+                        <div class="strategy-content">
+                            <div class="strategy-section">
+                                <h4>Content Mix</h4>
+                                <ul class="content-mix-list">
+                                    <li><span>Reels (15–60s)</span><strong>50%</strong></li>
+                                    <li><span>Stories (1/weekday, phone only)</span><strong>10%</strong></li>
+                                    <li><span>Carousels (Gamma-generated)</span><strong>25%</strong></li>
+                                    <li><span>Static feed posts</span><strong>0%</strong></li>
+                                    <li><span>Lives (monthly only)</span><strong>15%</strong></li>
+                                </ul>
+                            </div>
+                            <div class="strategy-section">
+                                <h4>Format Mix (Reels)</h4>
+                                <ul class="format-list">
+                                    <li><span>HeyGen avatar (science / wake-up)</span><strong>75%</strong></li>
+                                    <li><span>Founder-on-phone (stories, occasional)</span><strong>15%</strong></li>
+                                    <li><span>App UI reveals</span><strong>10%</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="posting-schedule">
+                            <div class="schedule-row"><span class="day">Mon</span><span class="time">—</span><span class="type">Claude scheduled task generates calendar; 30-min evening review + voice record + HeyGen batch render</span></div>
+                            <div class="schedule-row"><span class="day">Tue</span><span class="time">7:30 AM</span><span class="type">Reel #1 · 30 min to schedule everything in Later</span></div>
+                            <div class="schedule-row"><span class="day">Wed</span><span class="time">—</span><span class="type">Story only · 10-min engagement block</span></div>
+                            <div class="schedule-row"><span class="day">Thu</span><span class="time">—</span><span class="type">Story only · 10-min engagement block</span></div>
+                            <div class="schedule-row"><span class="day">Fri</span><span class="time">7:30 AM</span><span class="type">Reel #2 (different pillar from Tue) · 10-min engagement block</span></div>
+                            <div class="schedule-row"><span class="day">Sat</span><span class="time">9:00 AM</span><span class="type">Carousel (Gamma)</span></div>
+                            <div class="schedule-row"><span class="day">Sun</span><span class="time">evening</span><span class="type">15-min weekly review · no post</span></div>
+                        </div>
+                    </div>
+
+                    <!-- TikTok -->
+                    <div class="strategy-card">
+                        <div class="strategy-header">
+                            <div class="strategy-title">TikTok — Secondary</div>
+                            <div class="strategy-badge">25% of effort · 3–4 posts / week</div>
+                        </div>
+                        <div class="strategy-content">
+                            <div class="strategy-section">
+                                <h4>Content Mix</h4>
+                                <ul class="content-mix-list">
+                                    <li><span>Cross-posted IG Reels (no watermark)</span><strong>75%</strong></li>
+                                    <li><span>Native TikTok-first (founder on phone)</span><strong>25%</strong></li>
+                                </ul>
+                            </div>
+                            <div class="strategy-section">
+                                <h4>TikTok-native differences</h4>
+                                <ul class="format-list">
+                                    <li><span>Hook window</span><strong>1.5s</strong></li>
+                                    <li><span>Hashtags/post</span><strong>≤5</strong></li>
+                                    <li><span>Best posting time</span><strong>6–9 PM</strong></li>
+                                    <li><span>Caption tone</span><strong>Lower case, casual</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="posting-schedule">
+                            <div class="schedule-row"><span class="day">Mon</span><span class="time">6:30 PM</span><span class="type">Cross-post of top Monday IG Reel</span></div>
+                            <div class="schedule-row"><span class="day">Wed</span><span class="time">6:30 PM</span><span class="type">Cross-post of Tuesday Wake-Up Reel</span></div>
+                            <div class="schedule-row"><span class="day">Fri</span><span class="time">8:00 PM</span><span class="type">Native founder-on-phone (raw, unpolished)</span></div>
+                            <div class="schedule-row"><span class="day">Sun</span><span class="time">7:00 PM</span><span class="type">Bonus / opportunistic (only if content is there)</span></div>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="strategy-card">
+                        <div class="strategy-header">
+                            <div class="strategy-title">LinkedIn — Experimental</div>
+                            <div class="strategy-badge">10% of effort · 2 founder posts / week</div>
+                        </div>
+                        <div class="strategy-content">
+                            <div class="strategy-section">
+                                <h4>Content Mix</h4>
+                                <ul class="content-mix-list">
+                                    <li><span>Building-in-public (solo iOS app)</span><strong>40%</strong></li>
+                                    <li><span>Longevity market / business case</span><strong>30%</strong></li>
+                                    <li><span>Product design decisions</span><strong>20%</strong></li>
+                                    <li><span>Lessons / failures</span><strong>10%</strong></li>
+                                </ul>
+                            </div>
+                            <div class="strategy-section">
+                                <h4>Format rules</h4>
+                                <ul class="format-list">
+                                    <li><span>Profile</span><strong>Personal (not company)</strong></li>
+                                    <li><span>Format</span><strong>Text + 1 image</strong></li>
+                                    <li><span>Length</span><strong>~200 words</strong></li>
+                                    <li><span>Multi-image carousels</span><strong>Avoid (lower reach)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="posting-schedule">
+                            <div class="schedule-row"><span class="day">Tue</span><span class="time">8:00 AM</span><span class="type">Text post · Building in public / lessons</span></div>
+                            <div class="schedule-row"><span class="day">Thu</span><span class="time">12:00 PM</span><span class="type">Text post · Longevity market insight</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Content Pillars -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Content Pillars</h2>
+                    <p class="section-description">Five pillars carried forward from the existing marketing plan — they are validated after 3 weeks of production. Don't change what works.</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-name">The Wake-Up Call</div>
+                            <div class="pillar-percentage">25%</div>
+                        </div>
+                        <div class="pillar-theme">Direct, evidence-led, slightly provocative stats about ageing + inactivity</div>
+                        <ul class="pillar-topics">
+                            <li>Muscle loss 3–5% per decade after 30</li>
+                            <li>VO₂max decline and mortality</li>
+                            <li>Grip strength + cardiovascular risk</li>
+                            <li>Sedentary time paradox</li>
+                            <li>Sarcopenia + fall prevention</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-name">The Science</div>
+                            <div class="pillar-percentage">25%</div>
+                        </div>
+                        <div class="pillar-theme">Calm, authoritative, cites studies by name and journal</div>
+                        <ul class="pillar-topics">
+                            <li>HRV as readiness signal</li>
+                            <li>Norwegian 4x4 protocol</li>
+                            <li>Zone 2 vs Zone 5 (polarised training)</li>
+                            <li>Deep sleep + growth hormone</li>
+                            <li>Hypertrophy volume for 50+ adults</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-name">Founder Story</div>
+                            <div class="pillar-percentage">20%</div>
+                        </div>
+                        <div class="pillar-theme">Warm, personal, building-in-public — the moat</div>
+                        <ul class="pillar-topics">
+                            <li>Why this app exists</li>
+                            <li>What 10 user demos taught me</li>
+                            <li>Why we're adding manual mode</li>
+                            <li>This week's product decisions</li>
+                            <li>What went wrong this week</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-name">Actionable Tips</div>
+                            <div class="pillar-percentage">20%</div>
+                        </div>
+                        <div class="pillar-theme">Practical, specific, zero-jargon, highest share rate</div>
+                        <ul class="pillar-topics">
+                            <li>Dead hangs &amp; farmer's carries</li>
+                            <li>Morning HRV/RHR reading protocol</li>
+                            <li>3x3 strength template</li>
+                            <li>Sleep hygiene micro-rituals</li>
+                            <li>Single-leg balance drills</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-header">
+                            <div class="pillar-name">Product Teasers / Stories</div>
+                            <div class="pillar-percentage">10%</div>
+                        </div>
+                        <div class="pillar-theme">Confident, demo-led · rises to 20% post-launch as user stories replace teases</div>
+                        <ul class="pillar-topics">
+                            <li>Readiness Score UI reveal</li>
+                            <li>Manual mode for non-Watch users</li>
+                            <li>Workout generator screens</li>
+                            <li>HRV trend visualisation</li>
+                            <li>Post-launch: real user wins</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Content Mix Distribution</h3>
+                        <p class="chart-subtitle">Percentage of content dedicated to each pillar (pre-launch)</p>
+                        <div class="chart-wrapper">
+                            <canvas id="contentMixChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Post Distribution by Pillar</h3>
+                        <p class="chart-subtitle">Posts per 4-week cycle at the realistic 2 Reels + 1 Carousel/week cadence</p>
+                        <div class="chart-wrapper">
+                            <canvas id="weeklyPostsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: 90-Day Content Calendar -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">90-Day Content Calendar (Launch → Month 3)</h2>
+                    <p class="section-description">Monthly themes frame every pillar's topic for that month. Full 6-month detail in <strong>docs/social/content-calendar-may-oct-2026.md</strong>.</p>
+                </div>
+
+                <div class="calendar-section">
+
+                    <!-- Month 1 -->
+                    <div class="calendar-month">
+                        <div class="month-header">
+                            <div class="month-name">May 2026 — Launch Month</div>
+                            <div class="month-theme">"Welcome to Fitovo" · convert waitlist → installs → first testimonials</div>
+                        </div>
+                        <table class="calendar-table">
+                            <thead>
+                                <tr><th>Week</th><th>Platform</th><th>Hero Content</th><th>Topic</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>W1 May 4–10</strong></td><td><span class="calendar-platform">IG + TikTok</span></td><td>Launch Reel Mon + Live Wed + Email blast</td><td>"12 months of building, launched today. This is Fitovo."</td></tr>
+                                <tr><td><strong>W2 May 11–17</strong></td><td><span class="calendar-platform">IG</span></td><td>First 7-day user data story</td><td>"Here's the Readiness Score of a real user over their first week."</td></tr>
+                                <tr><td><strong>W3 May 18–24</strong></td><td><span class="calendar-platform">IG</span></td><td>First user spotlight (recruited from waitlist)</td><td>Carousel: "A full Fitovo training week, laid out."</td></tr>
+                                <tr><td><strong>W4 May 25–31</strong></td><td><span class="calendar-platform">IG + LinkedIn</span></td><td>Month-1 founder retrospective</td><td>"What I learned in Fitovo's first month."</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Month 2 -->
+                    <div class="calendar-month">
+                        <div class="month-header">
+                            <div class="month-name">June 2026 — Month 2</div>
+                            <div class="month-theme">"The Readiness Way" · deep-dive the core feature · first monthly IG Live</div>
+                        </div>
+                        <table class="calendar-table">
+                            <thead>
+                                <tr><th>Week</th><th>Platform</th><th>Hero Content</th><th>Topic</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>W5 Jun 1–7</strong></td><td><span class="calendar-platform">IG Live</span></td><td>First Friday monthly Q&amp;A launches</td><td>"The physiology of readiness (HRV + RHR + sleep)."</td></tr>
+                                <tr><td><strong>W6 Jun 8–14</strong></td><td><span class="calendar-platform">IG + TikTok</span></td><td>Strength programming deep-dive</td><td>"The 5 strength lifts that matter most after 40."</td></tr>
+                                <tr><td><strong>W7 Jun 15–21</strong></td><td><span class="calendar-platform">IG + TikTok</span></td><td>Cardio programming deep-dive</td><td>"Polarised training: 80/20 and why it works."</td></tr>
+                                <tr><td><strong>W8 Jun 22–28</strong></td><td><span class="calendar-platform">IG</span></td><td>#FitovoMember hashtag launches</td><td>"Recovery within readiness · sleep stages after 40."</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Month 3 -->
+                    <div class="calendar-month">
+                        <div class="month-header">
+                            <div class="month-name">July 2026 — Month 3</div>
+                            <div class="month-theme">"Stories from the Field" · user spotlights start weekly · first mid-tier paid collab</div>
+                        </div>
+                        <table class="calendar-table">
+                            <thead>
+                                <tr><th>Week</th><th>Platform</th><th>Hero Content</th><th>Topic</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>W9 Jun 29–Jul 5</strong></td><td><span class="calendar-platform">IG</span></td><td>Member Spotlight #1 Carousel</td><td>"First 500 users: what they have in common."</td></tr>
+                                <tr><td><strong>W10 Jul 6–12</strong></td><td><span class="calendar-platform">IG Live</span></td><td>Second monthly Q&amp;A</td><td>"Grip strength as a proxy — the latest data."</td></tr>
+                                <tr><td><strong>W11 Jul 13–19</strong></td><td><span class="calendar-platform">IG + TikTok</span></td><td>Member Spotlight #2 Reel</td><td>"Is VO₂max trainable at 60? (The answer surprised us.)"</td></tr>
+                                <tr><td><strong>W12 Jul 20–26</strong></td><td><span class="calendar-platform">IG + LinkedIn</span></td><td>Month-3 retrospective + "What I'd change"</td><td>"NEAT: why non-exercise activity matters as you age."</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION: Engagement -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Engagement &amp; Community Building</h2>
+                    <p class="section-description">Founder executes a 90-minute daily routine in three blocks. Full playbook in <strong>docs/social/engagement-playbook.md</strong>.</p>
+                </div>
+
+                <div class="engagement-grid">
+                    <div class="engagement-card">
+                        <div class="engagement-title">Daily — one 10-min block (weekdays only)</div>
+                        <ul class="routine-list">
+                            <li><span>Post today's Story (phone + text overlay)</span><span class="routine-time">~2 min</span></li>
+                            <li><span>Reply to any new comments on your posts</span><span class="routine-time">~3 min</span></li>
+                            <li><span>3–5 thoughtful comments on target accounts</span><span class="routine-time">~5 min</span></li>
+                            <li><span>Weekends: off (crisis exception only)</span><span class="routine-time">0 min</span></li>
+                            <li><span>Total engagement / week</span><span class="routine-time">~50 min</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="engagement-card">
+                        <div class="engagement-title">Weekly &amp; Monthly Rituals (realistic cadence)</div>
+                        <ul class="routine-list">
+                            <li><span>Monday Story: "Week's intention" question</span><span class="routine-time">Weekly</span></li>
+                            <li><span>Wednesday Story: quick tip overlay</span><span class="routine-time">Weekly</span></li>
+                            <li><span>Friday Story: "Win of the week" question</span><span class="routine-time">Weekly</span></li>
+                            <li><span>Instagram Live Q&amp;A (20 min)</span><span class="routine-time">1st Friday · odd months</span></li>
+                            <li><span>"What I learned this month" Reel</span><span class="routine-time">Last week · even months</span></li>
+                            <li><span>Member Spotlight Carousel</span><span class="routine-time">Once per quarter</span></li>
+                            <li><span>Community retrospective Reel</span><span class="routine-time">End of each quarter</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Influencers -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Tier 1 — Industry Expert Targets</h2>
+                    <p class="section-description">Reach via credibility, not follower count. Approach: 3 warm touches before any ask. Full ranked list + outreach tracker in <strong>docs/social/influencer-targets.md</strong>.</p>
+                </div>
+
+                <div class="influencer-grid">
+                    <div class="influencer-card">
+                        <div class="influencer-name">Dr. Vonda Wright</div>
+                        <div class="influencer-handle">@drvondawright</div>
+                        <div class="influencer-followers">Orthopaedic surgeon · midlife authority</div>
+                        <div class="influencer-reason">Speaks directly to 40+ women; "Hot for Your Health" audience</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Dr. Stacy Sims</div>
+                        <div class="influencer-handle">@drstacysims</div>
+                        <div class="influencer-followers">Exercise physiologist · women-specific</div>
+                        <div class="influencer-reason">Gold-standard evidence voice on menopause + performance</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Dr. Gabrielle Lyon</div>
+                        <div class="influencer-handle">@drgabriellelyon</div>
+                        <div class="influencer-followers">Muscle-centric medicine</div>
+                        <div class="influencer-reason">Huge 40+ audience on protein + strength</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Dr. Andy Galpin</div>
+                        <div class="influencer-handle">@drandygalpin</div>
+                        <div class="influencer-followers">Exercise physiologist</div>
+                        <div class="influencer-reason">Accessible science, podcast reach</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Mary Claire Haver</div>
+                        <div class="influencer-handle">@drmaryclaire</div>
+                        <div class="influencer-followers">Menopause + midlife women's health</div>
+                        <div class="influencer-reason">Enormous overlap with our female segment</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Peter Attia</div>
+                        <div class="influencer-handle">@peterattiamd</div>
+                        <div class="influencer-followers">Longevity category-defining</div>
+                        <div class="influencer-reason">Cite + tag; partnership unrealistic pre-traction</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Dr. Rhonda Patrick</div>
+                        <div class="influencer-handle">@foundmyfitness</div>
+                        <div class="influencer-followers">Longevity deep-science</div>
+                        <div class="influencer-reason">Adjacent audience, high credibility</div>
+                    </div>
+                    <div class="influencer-card">
+                        <div class="influencer-name">Don Saladino</div>
+                        <div class="influencer-handle">@donsaladino</div>
+                        <div class="influencer-followers">Trains 40+ celebs &amp; execs</div>
+                        <div class="influencer-reason">Professional audience, strong credibility</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Metrics -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Metrics &amp; Measurement</h2>
+                    <p class="section-description">Key performance indicators with current baselines and launch-day targets. Full weekly scorecard + decision trees in <strong>docs/social/metrics-dashboard.md</strong>.</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="label">IG Followers</div>
+                        <div class="current">12</div>
+                        <div class="target">Launch: <strong>50</strong></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Waitlist Size</div>
+                        <div class="current">~5</div>
+                        <div class="target">Launch: <strong>250–300</strong> (paid-carried)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">TikTok Followers</div>
+                        <div class="current">0</div>
+                        <div class="target">Launch: <strong>15–20</strong></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Median Reel Reach</div>
+                        <div class="current">148</div>
+                        <div class="target">Launch: <strong>300–500</strong></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Save Rate / Reel</div>
+                        <div class="current">—</div>
+                        <div class="target">Target: <strong>≥5%</strong> M1–3</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Engagement Rate</div>
+                        <div class="current">—</div>
+                        <div class="target">Launch: <strong>5–7%</strong></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Waitlist CPA (paid)</div>
+                        <div class="current">—</div>
+                        <div class="target">Target: <strong>&lt; $2</strong></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">DM Response</div>
+                        <div class="current">—</div>
+                        <div class="target">Target: <strong>&lt; 24h</strong></div>
+                    </div>
+                </div>
+
+                <div class="chart-grid">
+                    <div class="chart-card full-width">
+                        <h3 class="chart-title">Follower Growth Projection — Launch → Month 6</h3>
+                        <p class="chart-subtitle">Projected follower growth across platforms, with Week-0 at launch (May 4, 2026). Conservative targets; stretch targets are ~30% higher.</p>
+                        <div class="chart-wrapper tall">
+                            <canvas id="growthChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Roadmap -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Implementation Roadmap</h2>
+                    <p class="section-description">Three phases from pre-launch through Month 6 post-launch. Weekly tactical review every Monday, full strategic review quarterly.</p>
+                </div>
+
+                <div class="roadmap-phases">
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <div class="phase-name">Phase 1 — Pre-Launch</div>
+                            <div class="phase-timeline">Apr 13 – May 3</div>
+                        </div>
+                        <div class="phase-focus">Tease product · paid ads carry waitlist · ship 2 Reels/week consistently</div>
+                        <ul class="phase-tasks">
+                            <li>W3: Ship 2 Reels + 1 Carousel + 5 Stories</li>
+                            <li>W3: Start Meta Lead Gen at $15/day (not $10)</li>
+                            <li>W3: Start 10-min daily engagement block (Mon–Fri)</li>
+                            <li>W4: Hold paid at $15/day unless CPA &lt; $2 confirmed</li>
+                            <li>W5: Launch-eve founder Reel · email waitlist 3 days out</li>
+                        </ul>
+                        <div class="phase-goals">
+                            <h5>Goals</h5>
+                            <p>IG: 12 → 50 · Waitlist: 5 → 250–300 · TikTok: 0 → 15–20</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <div class="phase-name">Phase 2 — Launch</div>
+                            <div class="phase-timeline">May 4 – May 31</div>
+                        </div>
+                        <div class="phase-focus">Ship · convert waitlist · first testimonials · shift pillar to user stories</div>
+                        <ul class="phase-tasks">
+                            <li>W1: Launch Reel Monday · email blast · paid burst $30–40/day × 5 days (capped)</li>
+                            <li>W2: Back to 2 Reels/week; recruit 1–2 testimonials from waitlist</li>
+                            <li>W3: First user spotlight Carousel ships</li>
+                            <li>W4: Month-1 founder retrospective Reel + LinkedIn post</li>
+                            <li>Shift paid to retargeting + waitlist lookalikes</li>
+                        </ul>
+                        <div class="phase-goals">
+                            <h5>Goals</h5>
+                            <p>IG end-May: 150–200 · Installs W1: 100–120 · Paying-user conversion &gt; 15%</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <div class="phase-name">Phase 3 — Scale</div>
+                            <div class="phase-timeline">Jun – Oct 2026</div>
+                        </div>
+                        <div class="phase-focus">Hold 2-Reel cadence · #FitovoMember launches · paid ads keep carrying acquisition</div>
+                        <ul class="phase-tasks">
+                            <li>M2: Launch #FitovoMember hashtag · first monthly Live</li>
+                            <li>M3: Add LinkedIn founder series (text-only, low-effort)</li>
+                            <li>M4: Launch referral programme · drop to 1 Reel/wk in summer if needed</li>
+                            <li>M5: One podcast appearance (realistic mid-size show)</li>
+                            <li>M6: 6-month retrospective · quarterly strategy refresh</li>
+                        </ul>
+                        <div class="phase-goals">
+                            <h5>Goals</h5>
+                            <p>IG end-Oct: 2,500–3,500 · 30–40% organic share of acquisition · sustain 3 hrs/wk</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <p><strong>Generated:</strong> 2026-04-13 | <strong>Project:</strong> Fitovo</p>
+                <p style="margin-top: 5px;">StratArts Business Strategy Skills | social-media-strategist-v1.0.0</p>
+                <p style="margin-top: 5px;">Adjunct to: <strong>docs/marketing-plan.md</strong> · <strong>docs/social/strategy.md</strong> · <strong>docs/social/content-calendar-may-oct-2026.md</strong> · <strong>docs/social/influencer-targets.md</strong> · <strong>docs/social/engagement-playbook.md</strong> · <strong>docs/social/metrics-dashboard.md</strong></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif";
+        Chart.defaults.color = '#a3a3a3';
+
+        const tooltipConfig = {
+            backgroundColor: '#1a1a1a',
+            titleColor: '#f5f5f5',
+            bodyColor: '#d4d4d4',
+            borderColor: '#10b981',
+            borderWidth: 1
+        };
+
+        // Platform Score Radar Chart
+        new Chart(document.getElementById('platformScoreChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Audience Fit', 'Content Fit', 'Competition', 'Resources'],
+                datasets: [
+                    {
+                        label: 'Instagram',
+                        data: [10, 9, 6, 9],
+                        backgroundColor: 'rgba(16, 185, 129, 0.3)',
+                        borderColor: '#10b981',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#10b981'
+                    },
+                    {
+                        label: 'TikTok',
+                        data: [7, 9, 7, 8],
+                        backgroundColor: 'rgba(20, 184, 166, 0.2)',
+                        borderColor: '#14b8a6',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#14b8a6'
+                    },
+                    {
+                        label: 'LinkedIn',
+                        data: [6, 6, 9, 7],
+                        backgroundColor: 'rgba(5, 150, 105, 0.2)',
+                        borderColor: '#059669',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#059669'
+                    },
+                    {
+                        label: 'YouTube Shorts',
+                        data: [7, 9, 6, 4],
+                        backgroundColor: 'rgba(163, 163, 163, 0.15)',
+                        borderColor: '#a3a3a3',
+                        borderWidth: 1,
+                        borderDash: [4, 4],
+                        pointBackgroundColor: '#a3a3a3'
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    r: {
+                        min: 0,
+                        max: 10,
+                        ticks: { stepSize: 2, color: '#a3a3a3' },
+                        grid: { color: 'rgba(16, 185, 129, 0.2)' },
+                        pointLabels: { color: '#d4d4d4', font: { size: 12 } }
+                    }
+                },
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#d4d4d4' } },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+
+        // Effort Allocation Doughnut
+        new Chart(document.getElementById('effortChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Instagram (Primary)', 'TikTok (Secondary)', 'LinkedIn (Experimental)', 'Reserve (Email/Reddit/Founder LI)'],
+                datasets: [{
+                    data: [55, 25, 10, 10],
+                    backgroundColor: [
+                        'rgba(16, 185, 129, 0.9)',
+                        'rgba(20, 184, 166, 0.7)',
+                        'rgba(5, 150, 105, 0.5)',
+                        'rgba(163, 163, 163, 0.4)'
+                    ],
+                    borderColor: ['#10b981', '#14b8a6', '#059669', '#a3a3a3'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                cutout: '60%',
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#d4d4d4' } },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+
+        // Content Mix Doughnut
+        new Chart(document.getElementById('contentMixChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['The Wake-Up Call', 'The Science', 'Founder Story', 'Actionable Tips', 'Product Teasers'],
+                datasets: [{
+                    data: [25, 25, 20, 20, 10],
+                    backgroundColor: [
+                        'rgba(16, 185, 129, 0.9)',
+                        'rgba(16, 185, 129, 0.7)',
+                        'rgba(16, 185, 129, 0.5)',
+                        'rgba(20, 184, 166, 0.6)',
+                        'rgba(16, 185, 129, 0.3)'
+                    ],
+                    borderColor: '#10b981',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                cutout: '60%',
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#d4d4d4' } },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+
+        // Weekly Posts Bar (re-scaled to 2 Reels + 1 Carousel / week = 12 pieces per 4-week cycle)
+        new Chart(document.getElementById('weeklyPostsChart'), {
+            type: 'bar',
+            data: {
+                labels: ['The Wake-Up Call', 'The Science', 'Founder Story', 'Actionable Tips', 'Product Teasers'],
+                datasets: [{
+                    label: 'Posts per 4-week cycle (2 Reels + 1 Carousel/wk)',
+                    data: [3, 3, 2, 2, 2],
+                    backgroundColor: 'rgba(16, 185, 129, 0.8)',
+                    borderColor: '#10b981',
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    x: { grid: { color: 'rgba(16, 185, 129, 0.1)' }, ticks: { color: '#a3a3a3' } },
+                    y: { grid: { display: false }, ticks: { color: '#d4d4d4' } }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+
+        // Follower Growth Line
+        new Chart(document.getElementById('growthChart'), {
+            type: 'line',
+            data: {
+                labels: ['Launch (May)', 'M1 (Jun)', 'M2 (Jul)', 'M3 (Aug)', 'M4 (Sep)', 'M5 (Oct)', 'M6 (Nov)'],
+                datasets: [
+                    {
+                        label: 'Instagram',
+                        data: [50, 150, 300, 500, 800, 1500, 2500],
+                        borderColor: '#10b981',
+                        backgroundColor: 'rgba(16, 185, 129, 0.15)',
+                        borderWidth: 3,
+                        tension: 0.35,
+                        fill: true,
+                        pointRadius: 5,
+                        pointBackgroundColor: '#10b981'
+                    },
+                    {
+                        label: 'Waitlist / Paying users',
+                        data: [275, 400, 550, 700, 900, 1200, 1800],
+                        borderColor: '#14b8a6',
+                        backgroundColor: 'rgba(20, 184, 166, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.35,
+                        fill: false,
+                        pointRadius: 5,
+                        pointBackgroundColor: '#14b8a6'
+                    },
+                    {
+                        label: 'TikTok',
+                        data: [18, 40, 80, 150, 300, 500, 1000],
+                        borderColor: '#059669',
+                        borderWidth: 2,
+                        tension: 0.35,
+                        borderDash: [6, 4],
+                        pointRadius: 4,
+                        pointBackgroundColor: '#059669'
+                    },
+                    {
+                        label: 'LinkedIn (Kulvinder)',
+                        data: [400, 550, 700, 900, 1200, 1500, 2000],
+                        borderColor: '#a3a3a3',
+                        borderWidth: 2,
+                        tension: 0.35,
+                        borderDash: [2, 3],
+                        pointRadius: 3,
+                        pointBackgroundColor: '#a3a3a3'
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        grid: { color: 'rgba(16, 185, 129, 0.1)' },
+                        ticks: { color: '#a3a3a3' },
+                        beginAtZero: true
+                    },
+                    x: { grid: { display: false }, ticks: { color: '#a3a3a3' } }
+                },
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#d4d4d4' } },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+    </script>
+</body>
+</html>
