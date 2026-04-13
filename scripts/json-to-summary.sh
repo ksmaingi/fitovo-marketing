@@ -130,8 +130,12 @@ lines.append('')
 
 for story in stories:
     lines.append(f'### {story[\"day\"]}')
-    for j, concept in enumerate(story['concepts']):
-        lines.append(f'{j+1}. {concept}')
+    # Support both schemas: 'concepts' (array) and 'concept' (string)
+    if 'concepts' in story:
+        for j, concept in enumerate(story['concepts']):
+            lines.append(f'{j+1}. {concept}')
+    elif 'concept' in story:
+        lines.append(story['concept'])
     lines.append('')
 
 # Posting schedule
