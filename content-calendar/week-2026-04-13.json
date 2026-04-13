@@ -1,0 +1,79 @@
+{
+  "week": "2026-04-13 to 2026-04-19",
+  "meta": {
+    "week_number": 3,
+    "phase": "Pre-launch",
+    "pillars_used": {
+      "reel_1": "The Wake-Up Call",
+      "reel_2": "The Science",
+      "carousel": "Actionable Tips"
+    },
+    "notes": "Week context fields (waitlist count, last week performer, avoid list) were not provided — defaults assumed. Fill in before next run. Founder Story reel due next week (required at least once every 2 weeks)."
+  },
+  "reels": [
+    {
+      "pillar": "The Wake-Up Call",
+      "post_day": "Tuesday",
+      "hook": "Every fitness app you've ever used was built for a 25-year-old.",
+      "script": "Every fitness app I've tried was built for a 25-year-old. High-rep circuits. Aggressive overload. No recovery guidance. But after 40, your body doesn't respond the same way. Not because something's wrong — because something's different. HRV matters now. Recovery takes longer. And pushing through without listening leads to setbacks, not gains. I built Fitovo because I lived this. Fitness engineered for the body you actually have right now — not the one you had 20 years ago. Comment 'READY' below if you're done with apps that weren't built for you.",
+      "cta": "Comment 'READY' below if you're done with apps that weren't built for you.",
+      "caption": "Every fitness app I've tried was built for a 25-year-old.\n\nHigh-rep circuits. Aggressive overload. Zero recovery guidance.\n\nBut after 40, your body doesn't respond the same way.\n\nNot because something's wrong with you.\n\nBecause something's different.\n\nHRV matters now. Recovery windows lengthen. And training without listening to your body produces more setbacks than gains.\n\nFitovo is being built for the body you actually have — with readiness-based scheduling powered by your Apple Watch biometrics.\n\nComment 'READY' if you're done with apps designed for someone half your age. 👇",
+      "hashtags": ["#fitovo", "#fitnessafter40", "#longevitytraining", "#trainsmarter"],
+      "tiktok_caption": "every fitness app you've used was built for a 25-year-old. yours probably still is. comment 'ready' if that's gotta change 👇 #fitnessafter40 #longevity #fitovo",
+      "visual_notes": "Direct-to-camera, medium close-up. Not a gym — home office or kitchen sets the right tone. Warm, conversational, slightly leaning forward on the word 'different.' Pause there — let it land. Avatar delivery: measured pace throughout, quicken slightly on the list ('High-rep circuits. Aggressive overload. No recovery guidance.') then slow back down. Genuine smile on 'I built Fitovo because I lived this.' No B-roll needed — presence is the content."
+    },
+    {
+      "pillar": "The Science",
+      "post_day": "Friday",
+      "hook": "Norwegian researchers found the most effective cardio protocol ever tested. It takes 25 minutes.",
+      "script": "The Norwegian 4x4 protocol. Developed at the Norwegian University of Science and Technology. Four minutes at 85 to 95 percent of your max heart rate, three minutes easy — repeat that four times. That's it. Why does this matter? VO2max is one of the strongest single predictors of how long you'll live. Research published in JAMA found that low cardiorespiratory fitness was a more powerful mortality risk factor than smoking, hypertension, or diabetes. Not a typo. And yet most people do this completely blind — no heart rate guidance, no readiness check before they start. That's exactly what Fitovo is built to fix. Save this. And follow for more of the science behind training smarter after 40.",
+      "cta": "Save this — and follow for more of the science behind training smarter after 40.",
+      "caption": "Norwegian researchers designed the most effective cardio protocol ever tested.\n\nIt takes 25 minutes.\n\nThe 4x4 protocol:\n→ 4 minutes at 85–95% of max heart rate\n→ 3 minutes easy recovery\n→ Repeat × 4\n\nWhy does VO2max matter after 40?\n\nResearch published in JAMA found low cardiorespiratory fitness was a stronger mortality risk than smoking, high blood pressure, or diabetes combined.\n\nNot a typo.\n\nThe problem? Most people do this without heart rate guidance or a readiness check. That's where the real risk — and the real opportunity — is.\n\nFitovo builds the 4x4 into your adaptive training plan, with your Apple Watch telling you when you're actually ready to push.\n\nSave this protocol. 📌 And follow for more of the science behind training smarter after 40.",
+      "hashtags": ["#fitovo", "#norwegian4x4", "#vo2max", "#longevitytraining", "#fitnessscience"],
+      "tiktok_caption": "norwegian researchers built the most effective cardio workout ever tested. 25 minutes. science-backed. and most people are doing it wrong. save this 📌 #vo2max #longevity #fitnessafter40",
+      "visual_notes": "Direct-to-camera. Open with slightly raised eyebrow on the hook — intrigued, not clickbait. When listing the 4x4 steps, consider a simple text overlay on screen: '4 min hard / 3 min easy / ×4.' Slow down and let the JAMA stat breathe — pause after 'smoking,' then 'hypertension,' then 'diabetes.' Each word should land individually. End calm and confident, not punchy. Avatar: this Reel rewards a measured, sports-scientist tone more than high energy."
+    }
+  ],
+  "carousels": [
+    {
+      "pillar": "Actionable Tips",
+      "post_day": "Saturday",
+      "title": "Your Apple Watch knows if you should train hard today. Most people ignore it.",
+      "slides": [
+        "Your Apple Watch knows if you should train hard today. Most people ignore it. Here's how to read it. →",
+        "HRV = Heart Rate Variability. The variation between heartbeats reveals how well your nervous system has recovered.",
+        "Higher HRV = recovered and ready. Lower HRV = body under stress. Both are useful — neither is a failure.",
+        "One reading means nothing. Your 7-day average is your baseline. Today's number only matters relative to that.",
+        "Best time to measure: immediately on waking, before you get out of bed. Same time daily = reliable data.",
+        "Pair HRV with resting heart rate. Both elevated above your norm? Your body is asking for rest. Listen.",
+        "Low HRV day? Go low-intensity — walk, mobilise, zone 1 work. Stay in the habit, not the ego.",
+        "Fitovo reads your Apple Watch data and adjusts your training plan automatically. Coming soon — waitlist link in bio."
+      ],
+      "caption": "Your Apple Watch collects data every single night.\n\nMost people check their step count and move on.\n\nBut your HRV? That's the signal that tells you whether to push hard or pull back today.\n\nSwipe to learn how to actually read it — and what to do with the number you see.\n\n📌 Save this one. You'll come back to it.\n\nAnd follow @fitovo for more on training smarter after 40.",
+      "hashtags": ["#fitovo", "#hrv", "#applewatch", "#longevitytraining"],
+      "gamma_prompt": "Create a minimal, editorial-style carousel presentation with 8 slides. Title for slide 1: 'Your Apple Watch knows if you should train hard today. Most people ignore it.' Slide text in order — Slide 1: 'Your Apple Watch knows if you should train hard today. Most people ignore it. Here's how to read it. →' | Slide 2: 'HRV = Heart Rate Variability. The variation between heartbeats reveals how well your nervous system has recovered.' | Slide 3: 'Higher HRV = recovered and ready. Lower HRV = body under stress. Both are useful — neither is a failure.' | Slide 4: 'One reading means nothing. Your 7-day average is your baseline. Today's number only matters relative to that.' | Slide 5: 'Best time to measure: immediately on waking, before you get out of bed. Same time daily = reliable data.' | Slide 6: 'Pair HRV with resting heart rate. Both elevated above your norm? Your body is asking for rest. Listen.' | Slide 7: 'Low HRV day? Go low-intensity — walk, mobilise, zone 1 work. Stay in the habit, not the ego.' | Slide 8: 'Fitovo reads your Apple Watch data and adjusts your training plan automatically. Coming soon — waitlist link in bio.' Visual style: white or very light grey (#F7F7F5) background. Bold near-black text (#1A1A1A) as the primary element. Single green accent colour (#3D9B6A or similar) used sparingly — numbers, arrows, or key words only. No stock photography. Clean sans-serif typeface (e.g. Inter or DM Sans). Slide 1 uses full-bleed bold title text, largest size. Slides 2–7 use a consistent layout: bold key phrase at top (green accent), body text below in regular weight. Maximum 20 words of body text per slide. 'Fitovo' wordmark appears subtly bottom-right on slide 8 only. Swipe arrow visible on slide 1. Overall feel: trusted editorial, not gym-bro."
+    }
+  ],
+  "stories": [
+    {
+      "day": "Monday",
+      "concept": "Question sticker Story. Plain white or brand-green background. Bold text overlay: 'What does training smarter look like for you this week?' Add Instagram Question sticker below with prompt text: 'Drop your intention ↓'. Post between 8–9am. No video, no transitions, no editing — text + sticker only. Tap 'Your Story,' add background colour, type the text, drag in the Question sticker, post. Under 2 minutes."
+    },
+    {
+      "day": "Tuesday",
+      "concept": "Re-share Tuesday's Reel directly to Stories. Add a bold text sticker top-left: 'NEW ↑'. Add a second small text sticker below it reading: 'Every fitness app has a 25-year-old problem. Is yours one of them?' No other edits. Share from the Reel via the paper-plane icon → 'Add to Your Story.' Under 2 minutes."
+    },
+    {
+      "day": "Wednesday",
+      "concept": "Quick tip text overlay Story. Dark background (near-black). One line of large bold white text centred on screen: 'Resting heart rate 5+ bpm above your norm this morning? That's a recovery day, not a training day.' Smaller sub-text below in green: 'Your body is talking. Listen to it.' No video, no B-roll. Type, post, done. Under 2 minutes."
+    },
+    {
+      "day": "Thursday",
+      "concept": "Poll Story. Plain light background. Text overlay at top: 'What's your biggest training challenge after 40?' Add Instagram Poll sticker with exactly 4 options: A) Recovery takes forever / B) Not sure what to actually do / C) Fear of getting injured / D) Finding consistent time. Post any time Thursday. No editing beyond the sticker. Under 2 minutes."
+    },
+    {
+      "day": "Friday",
+      "concept": "Re-share Friday's Reel to Stories. Add bold text sticker top-left: 'NEW ↑'. Then add an Instagram Question sticker below the Reel preview with prompt: 'What was your win this week? Big or small — drop it below 👇'. Two stickers, one reshare, no editing. Post after the Reel goes live. Under 2 minutes."
+    }
+  ]
+}
