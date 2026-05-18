@@ -1,0 +1,79 @@
+{
+  "week": "2026-05-18 to 2026-05-24",
+  "meta": {
+    "week_number": 4,
+    "phase": "Pre-launch",
+    "pillars_used": {
+      "reel_1": "Founder Story",
+      "reel_2": "The Science",
+      "carousel": "Actionable Tips"
+    },
+    "notes": "Founder Story included as required — last featured Week 2 ('I almost didn't build this / HRV data revelation'). New angle this week: family inciting incident / longevity reframe. The Science last used Week 2 (Zone 2/mitochondria, non-functional overreaching); this week covers eccentric loading — not previously mentioned. Actionable Tips used as Reel 1 in Week 3; moved to Carousel here to vary format. Wake-Up Call (last Week 3) and Product Teasers (last Week 3) both sit out this week — neither exceeds the 2-week rotation gap, but both must return by Week 5. Hook styles used this week: inciting-incident/family-moment (Reel 1), contrast-reframe/1-vs-3-seconds (Reel 2) — both new. Add to avoid list for future runs: 'dad/family longevity inciting incident' Founder Story angle; eccentric loading / slow eccentrics / 3-second lowering rule; '5 signs your recovery is falling behind' carousel; deload weeks as recovery signal; motivation as physiological readiness signal; cold exposure post-session."
+  },
+  "reels": [
+    {
+      "pillar": "Founder Story",
+      "post_day": "Tuesday",
+      "hook": "My dad couldn't get up from the floor without help. He was 67. That's when Fitovo clicked into place.",
+      "script": "My dad couldn't get up from the floor without help. He was 67.\n\nHe wasn't inactive — he walked, stayed on his feet. But he'd never trained with any real intent. And by 67, the gap had quietly opened up.\n\nThat moment is why Fitovo exists.\n\nNot training for performance. Not for aesthetics. Training as the infrastructure for the life you want at 70, 80, and beyond.\n\nYour 40s and 50s are the investment window. The research is clear on that.\n\nComment LEGACY below if you're training for something bigger than this year.",
+      "cta": "Comment LEGACY below if you're training for something bigger than this year.",
+      "caption": "My dad couldn't get up from the floor without help.\n\nHe was 67.\n\nHe wasn't inactive. He walked. He stayed on his feet. But he'd never trained with real intent — and by 67, the gap had quietly opened up.\n\nThat moment is why Fitovo exists.\n\nNot training for performance.\nNot for aesthetics.\n\nTraining as the infrastructure for the life you want at 70, 80, and beyond — functional, independent, and genuinely energetic.\n\nYour 40s and 50s are the investment window. The research on this is unambiguous. What you build now determines what 70 looks like.\n\nFitovo is built around that idea — an app that meets your body where it actually is, and programmes around what it can genuinely handle.\n\nWaitlist is open. Link in bio.\n\n👇 Comment LEGACY if you're training for something bigger than this year.",
+      "hashtags": ["#fitovo", "#longevitytraining", "#fitnessafter40", "#buildinpublic"],
+      "tiktok_caption": "my dad couldn't get off the floor at 67. he wasn't unfit — he just never trained with intent. that's the moment fitovo stopped being an idea and became something i had to build. training as infrastructure for the life you want at 70. comment 'legacy' if you get it 💚 #longevitytraining #fitnessafter40",
+      "visual_notes": "Direct-to-camera, slower and more personal than any previous Reel. Home setting, warm lighting — not a studio or gym. Avatar should be still and present at 'He was 67' — pause here for a full beat before continuing. No text overlays needed on this one; the words carry it entirely. Delivery should feel like the founder talking to one person across a kitchen table, not broadcasting to a feed. The pivot at 'That moment is why Fitovo exists' should land quietly — not with a swell of energy but with quiet conviction. CTA delivered gently: an invitation, not a call to action."
+    },
+    {
+      "pillar": "The Science",
+      "post_day": "Friday",
+      "hook": "1 second versus 3 seconds. Same rep. Different results entirely.",
+      "script": "1 second versus 3 seconds. Same rep. Different results entirely.\n\nThe part I'm talking about is the lowering — the eccentric phase. When your muscle lengthens under load, it generates more mechanical tension than the lift itself.\n\nResearch suggests eccentric-focused training can build up to 25% more strength than standard lifting, with less joint stress.\n\nAfter 40, this matters even more. Tendons adapt more slowly than muscle. Slow eccentrics force that tendon adaptation and build collagen in connective tissue — exactly what keeps you training without injury.\n\nThe change is simple: take 3 seconds to lower any movement. Same workout. Completely different stimulus.\n\nSave this — and test it this week. You'll feel the difference by set two.",
+      "cta": "Save this — and test it this week. You'll feel the difference by set two.",
+      "caption": "1 second versus 3 seconds.\nSame weight. Same reps. Different adaptation entirely.\n\nThe eccentric phase — the lowering — generates more mechanical tension than the lift itself. That tension is the primary signal for strength and muscle adaptation.\n\nResearch suggests eccentric-focused training builds up to 25% more strength than standard lifting, with less joint stress.\n\nAfter 40, this is especially significant:\n→ Tendons adapt more slowly than muscle\n→ Slow eccentrics force tendon and collagen adaptation\n→ That's what keeps you training without breakdown for decades\n\nThe change costs nothing:\n→ Take 3 seconds to lower any movement\n→ Same workout, different stimulus\n→ Your connective tissue will thank you at 60\n\nThis is one of the training principles Fitovo is built around — smarter stimulus, not harder sessions.\n\n💾 Save this and test it this week. You'll feel the difference by set two.",
+      "hashtags": ["#fitovo", "#fitnessafter40", "#strengthtraining", "#longevitytraining"],
+      "tiktok_caption": "1 second vs 3 seconds. same weight, same reps — but the 3-second version builds up to 25% more strength and protects your tendons after 40. the fix costs nothing 🎯 save this #fitnessafter40 #strengthtraining",
+      "visual_notes": "Direct-to-camera, clear and confident. Avatar should use a slow downward hand gesture to visualise 'lowering' during the eccentric explanation. Consider a simple animated overlay: a dumbbell curl showing slow descent labelled '3 sec ✓' versus fast descent labelled '1 sec'. Warm, energised tone — this is good news, an upgrade available in the very next session. 'You'll feel the difference by set two' delivered with a genuine, slight smile — it's a real promise, not a sales line."
+    }
+  ],
+  "carousels": [
+    {
+      "pillar": "Actionable Tips",
+      "post_day": "Saturday",
+      "title": "5 signs your recovery is falling behind (and what to do about each)",
+      "slides": [
+        "5 signs your recovery is falling behind (and what to do about each) →",
+        "1. Resting heart rate is 5+ bpm above your baseline. → Rest day or Zone 1 walk only. No exceptions.",
+        "2. HRV is 10%+ below your 7-day average. → Prioritise sleep. Cut training intensity for 48 hours.",
+        "3. You feel worse mid-workout than at the start. → Stop. Finishing this session is counterproductive.",
+        "4. Sleep quality drops despite a normal bedtime. → Recovery debt is building. Deload for 2–3 days.",
+        "5. Motivation to train is unusually low. → Not laziness. Low drive is a genuine physiological readiness signal.",
+        "1–2 signs? Adjust today's session. 3 or more? Take 48 hours off. This is how adaptation works.",
+        "Save this. Recovery signals exist to protect your progress — not slow it down. 💚"
+      ],
+      "caption": "Your body has been trying to tell you it needs more recovery.\n\nMost people override it.\n\nHere are 5 reliable signals — and exactly what to do with each. 👉\n\nSave this for the next time you're unsure whether to push or pull back.\n\nThis is also the logic Fitovo runs on automatically every morning — reading your biometrics and adjusting your plan before you've had your coffee.\n\nWaitlist → link in bio.",
+      "hashtags": ["#fitovo", "#fitnessafter40", "#longevitytraining", "#recoverytraining"],
+      "gamma_prompt": "Create a clean, minimal 8-slide carousel called '5 signs your recovery is falling behind (and what to do about each).' Visual style: white or very light grey background (#F7F7F5), bold near-black primary type (#1A1A1A), single green accent (#3D9B6A) used sparingly on numbers, arrows, and action-step keywords only. Sans-serif typeface (Inter or DM Sans preferred). No photography or stock images. No gradients. Overall feel: trusted, evidence-backed health content — clean editorial tone. Slide 1: full-bleed bold title slide — '5 signs your recovery is falling behind (and what to do about each) →'. Largest font, swipe arrow bottom-right. Slides 2–6: each features a large green number (1–5) top-left, a bold signal line, then the action step on a second line preceded by a green arrow '→'. Slide 2: '1. Resting heart rate is 5+ bpm above your baseline. → Rest day or Zone 1 walk only. No exceptions.' Slide 3: '2. HRV is 10%+ below your 7-day average. → Prioritise sleep. Cut training intensity for 48 hours.' Slide 4: '3. You feel worse mid-workout than at the start. → Stop. Finishing this session is counterproductive.' Slide 5: '4. Sleep quality drops despite a normal bedtime. → Recovery debt is building. Deload for 2–3 days.' Slide 6: '5. Motivation to train is unusually low. → Not laziness. Low drive is a genuine physiological readiness signal.' Slide 7: bold callout slide — '1–2 signs? Adjust today's session. 3 or more? Take 48 hours off. This is how adaptation works.' Highlight '3 or more' in green bold. Slide 8: closing slide — 'Save this. Recovery signals exist to protect your progress — not slow it down. 💚' Green accent on 'not slow it down.' Small 'fitovo' wordmark bottom-right on every slide. All slide body text strictly under 20 words."
+    }
+  ],
+  "stories": [
+    {
+      "day": "Monday",
+      "concept": "Question sticker Story. White or soft light background. Bold text overlay centred: 'What's one physical thing you want to feel better at by the end of this week?' Instagram Question sticker below with prompt: 'Drop your intention here ↓'. Post 8–9am. Background colour, text overlay, sticker, done. Under 2 minutes."
+    },
+    {
+      "day": "Tuesday",
+      "concept": "Re-share Tuesday's Founder Story Reel to Stories via the paper-plane icon → 'Add to Your Story'. Add bold text sticker top-left: 'NEW ↑'. Add a second smaller text sticker below the Reel preview: 'Why I built Fitovo — and why it's personal.' Two stickers, one reshare, no other edits. Under 2 minutes."
+    },
+    {
+      "day": "Wednesday",
+      "concept": "Quick tip text overlay Story. Dark near-black background. One large bold white text line centred: 'The lowering is where strength is built. Take 3 seconds on the way down.' Smaller green sub-text below: 'Try it on your next session.' No video, no B-roll. Choose dark background, type text, post. Under 2 minutes."
+    },
+    {
+      "day": "Thursday",
+      "concept": "Poll Story. Plain light background. Bold text overlay at top: 'When your body feels off, what do you usually do?' Instagram Poll sticker with 4 options: A) Train anyway 💪 / B) Go lighter 🚶 / C) Skip it 😴 / D) Check my Watch data 📊. Post any time Thursday. Under 2 minutes."
+    },
+    {
+      "day": "Friday",
+      "concept": "Re-share Friday's Science Reel to Stories after it goes live. Add bold text sticker top-left: 'NEW ↑'. Add Instagram Question sticker below the Reel preview with prompt: 'What's your win this week? Training, energy, or otherwise — drop it below 👇'. Two stickers, one reshare, no other edits. Under 2 minutes."
+    }
+  ]
+}
