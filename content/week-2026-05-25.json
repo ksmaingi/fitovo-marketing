@@ -1,0 +1,69 @@
+{
+  "week": "2026-05-25 to 2026-05-31",
+  "reels": [
+    {
+      "pillar": "The Science",
+      "post_day": "Tuesday",
+      "hook": "Your Apple Watch already knows you shouldn't train hard today. The question is — does your fitness app?",
+      "script": "Here's what most fitness apps completely ignore.\n\nYour body doesn't perform the same every single day. But your training plan? It treats every Monday the same — whether you slept brilliantly or you were up at 3am.\n\nHRV — heart rate variability — changes daily. It's your nervous system telling you whether it's ready to push.\n\nFitovo reads your Apple Watch data and adjusts your session before you put your trainers on. High readiness? We push. Low readiness? We pull back.\n\nBecause training smarter isn't about doing less — it's about doing the right thing on the right day.",
+      "cta": "Follow — we're sharing more of how this works before we launch.",
+      "caption": "Your Apple Watch is already tracking one of the most useful signals in fitness.\n\nHRV — heart rate variability — tells you how recovered your nervous system actually is. Not how you think you feel. How you actually are.\n\nMost fitness apps ignore this completely. Same workout. Same intensity. Same day. Every week.\n\nFitovo reads your Apple Watch biometrics before each session and adjusts your training to match your actual readiness.\n\nHigh HRV → we push you.\nLow HRV → we pull back.\n\nThis is what training built for adults looks like.\n\nFollow to see more of how this works before we launch.",
+      "hashtags": ["#fitovo", "#HRVtraining", "#longevitytraining", "#applewatch", "#fitnessover40"],
+      "tiktok_caption": "your apple watch literally knows if you should train hard today… does your fitness app? 👀 #hrv #fitnessover40 #fitovo",
+      "visual_notes": "Direct-to-camera, calm and authoritative. Slight forward lean at 'HRV changes daily' to land the concept. Pause one beat before 'the right thing on the right day.' No B-roll required — avatar carries the explanation. Optional: phone/watch graphic overlay on-screen at 'your Apple Watch data.'"
+    },
+    {
+      "pillar": "The Wake-Up Call",
+      "post_day": "Friday",
+      "hook": "After 35, you lose about 1% of your cardiovascular fitness every single year. Almost nobody talks about what that actually means.",
+      "script": "VO2max. It sounds like a gym metric — but it's one of the strongest predictors of how long you live.\n\nAfter 35, most people lose around 1% per year. That's 10% per decade. By your 60s, a normal staircase can feel like a mountain.\n\nThe good news? This is not inevitable.\n\nTwo interval sessions a week at high intensity can actually halt — and in many cases reverse — that decline. The Norwegian 4x4 protocol. Four minutes hard, three minutes recovery, four rounds. Simple. Evidence-based. Built for bodies over 40.\n\nYour cardiovascular fitness doesn't have to just fade. You can turn this around.",
+      "cta": "Comment '4x4' below and I'll send you the full breakdown of the Norwegian protocol.",
+      "caption": "Here's a number that should matter to everyone over 40.\n\nYou lose roughly 1% of your VO2max — your cardiovascular capacity — every year after 35.\n\nThat's your ability to climb stairs, keep up with your kids, recover from illness. Declining, year on year, without intervention.\n\nBut intervention works. The research is clear.\n\nTwo high-intensity interval sessions per week can halt — and in many cases reverse — that decline.\n\nThe Norwegian 4x4 protocol is one of the most studied and effective methods we have. And it's built into Fitovo.\n\nNot because it's trendy. Because it works.\n\n↓ Comment '4x4' and I'll send you the full breakdown.",
+      "hashtags": ["#fitovo", "#VO2max", "#Norwegian4x4", "#longevitytraining", "#fitnessover50"],
+      "tiktok_caption": "losing 1% of your cardio fitness every year after 35… nobody warned me 😬 comment '4x4' and i'll explain the fix #vo2max #fitnessover40 #fitovo",
+      "visual_notes": "Energetic but grounded. Slow delivery at '1% per year after 35' — pause for it to land. Build pace through the 'good news' section. Warm, confident close on 'You can turn this around.' No B-roll needed, but an on-screen text overlay of '1% per year' at that moment adds impact."
+    }
+  ],
+  "carousels": [
+    {
+      "pillar": "Actionable Tips",
+      "post_day": "Saturday",
+      "title": "5 things to do this week for longevity (that aren't going to the gym)",
+      "slides": [
+        "5 things to do this week for longevity (that aren't going to the gym)",
+        "1. Walk 8,000 steps. Research shows diminishing returns above this for most adults.",
+        "2. Do one set of bodyweight squats to failure. That number predicts your future mobility.",
+        "3. Check your resting heart rate trend — lower over time means your heart is getting more efficient.",
+        "4. Go to bed 30 minutes earlier for 3 nights. Sleep is your cheapest recovery tool.",
+        "5. Add one high-protein meal per day. After 40, your body processes protein less efficiently — spread it out.",
+        "You don't need a complete overhaul. Consistent small moves, compounded over time.",
+        "Fitovo is being built around exactly this. Join the waitlist — link in bio."
+      ],
+      "caption": "Longevity isn't built in the gym. It's built in the decisions you make every single day.\n\n5 things you can do this week — no gym required — that compound into a genuinely longer, better quality life.\n\nSave this for Sunday planning. 📌",
+      "hashtags": ["#fitovo", "#longevitytips", "#fitnessover40", "#healthyaging"],
+      "gamma_prompt": "Create a minimal, clean carousel presentation titled '5 Things to Do This Week for Longevity (That Aren't Going to the Gym)'. Use a white or very light grey background with a single green accent colour (approximately #2ECC71). Bold, large type for key points on each slide. Keep all slide body text under 20 words. The 8 slides are: Slide 1 (title card) — '5 things to do this week for longevity (that aren't going to the gym)'; Slide 2 — '1. Walk 8,000 steps. Research shows diminishing returns above this for most adults.'; Slide 3 — '2. Do one set of bodyweight squats to failure. That number predicts your future mobility.'; Slide 4 — '3. Check your resting heart rate trend — lower over time means your heart is getting more efficient.'; Slide 5 — '4. Go to bed 30 minutes earlier for 3 nights. Sleep is your cheapest recovery tool.'; Slide 6 — '5. Add one high-protein meal per day. After 40, your body processes protein less efficiently — spread it out.'; Slide 7 — 'You don't need a complete overhaul. Consistent small moves, compounded over time.'; Slide 8 — 'Fitovo is being built around exactly this. Join the waitlist — link in bio.' Include the word 'Fitovo' subtly in the footer of every slide. No stock photos. Text-forward, clean design with generous white space."
+    }
+  ],
+  "stories": [
+    {
+      "day": "Monday",
+      "concept": "Question sticker. White background, bold green heading text: 'This week's intention'. Subtext in dark grey: 'What's one thing you want your body to feel like by Friday?' Question sticker directly below. Small Fitovo wordmark top-right. Phone execution: open Stories, pick solid white background, add text layers, drop in Question sticker. Under 2 minutes."
+    },
+    {
+      "day": "Tuesday",
+      "concept": "Re-share Tuesday's Reel. Add bold green text overlay top of screen: 'New ↑ HRV explained'. Add a small sticker or text below the Reel preview: 'Your Apple Watch is tracking this — are you using it? 👀'. Phone execution: share Reel to Stories, add text overlay and sticker. Under 2 minutes."
+    },
+    {
+      "day": "Wednesday",
+      "concept": "Quick tip text overlay. Dark green background, white bold text centred on screen: 'Tip: Your best interval session starts with 5 minutes of easy walking. Don't skip it — your HRV will thank you.' Fitovo wordmark small at bottom. Phone execution: Stories background colour → dark green, add text. Under 2 minutes."
+    },
+    {
+      "day": "Thursday",
+      "concept": "Poll sticker. Neutral background, bold question text: 'How do you decide whether to train hard or take it easy?' Four poll options: 'I always push through' / 'I listen to my body' / 'I check my watch data' / 'Honestly, I'm guessing'. Phone execution: Stories, add text, drop Poll sticker with four options. Under 2 minutes."
+    },
+    {
+      "day": "Friday",
+      "concept": "Re-share Friday's Reel with bold text overlay: 'Big one today ↑ VO2max and what to do about it'. Below the Reel preview, add a Question sticker: 'What's your win this week? Big or small 👇'. Phone execution: share Reel to Stories, add text overlay, add Question sticker. Under 2 minutes."
+    }
+  ]
+}
